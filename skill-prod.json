@@ -1,2090 +1,2104 @@
 {
-  "name": "prod",
-  "intents": [
-    {
-      "intent": "support-access_error",
-      "examples": [
-        {
-          "text": "it ask me to login and my internal login is not helping"
-        },
-        {
-          "text": "After my log in with IBM ID, the watson assistant, occurs an error \"You are no longer logged in. Re-directing you to the login page.\""
-        },
-        {
-          "text": "Getting failed to access token when accessting the Asstant tooling"
-        },
-        {
-          "text": "cloud.ibm.com permission look identical on user but they have different level of access resources in resource group"
-        },
-        {
-          "text": "Assistants could not be loaded at this time. Unable to fetch access token for account"
-        },
-        {
-          "text": "Owner of the account is encountering error when accessing Watson Assistant"
-        },
-        {
-          "text": "Unable to access Watson Assistant page. It is not loading"
-        },
-        {
-          "text": "I get an error: Unauthorized access is denied to invalid credentials"
-        },
-        {
-          "text": "You do not have access to this instanceRequest access to this instance from the administrator, or select from one of your instances below."
-        },
-        {
-          "text": "Whenever I try to create a new Watson Assistant service or access my previous instances I get an error. I attach screenshots for both scenarios"
-        },
-        {
-          "text": "and it gives me watson_developer_cloud.watson_service.WatsonApiException: Error: Unauthorized: Access is denied due to invalid credentials"
-        },
-        {
-          "text": "in my workspace from watson assistant appears this message .Error while retrieving messages. Error: Analytics Error: Protocol error."
-        },
-        {
-          "text": "I can not create a new Watson Assistant instance. I get next error:The 'CTT_watson' service wasn't created because of network error."
-        },
-        {
-          "text": "An access error has occurred to Watson Assistant (formerly Conversation) from our system.http error 503"
-        },
-        {
-          "text": "Multiple users unable to access watson conversation, getting error messages.Granted full access to myself and still unable to access due to insufficient access"
-        },
-        {
-          "text": "issue I'd like to give access to our bot to remy.solutions and pierre.solutions"
-        }
-      ],
-      "description": "user has an error trying to access WA"
-    },
-    {
-      "intent": "feature-support-general",
-      "examples": [
-        {
-          "text": "What features are available?"
-        },
-        {
-          "text": "Great, thanks. So currently there is no way to tell who modified an Intent, Entity or Dialog, right?"
-        },
-        {
-          "text": "What can WA do for me?"
-        }
-      ],
-      "description": "user has a general question about a feature"
-    },
-    {
-      "intent": "feature-support-context_variables",
-      "examples": [
-        {
-          "text": "can I store a dictionary in a context variable?"
-        },
-        {
-          "text": "When I print the entity or try to save the value in a $context variable, it doesn't save the first 0"
-        },
-        {
-          "text": "Does the input.text configuration on the context fields have a limit?(<? input.text ?>)On our chatsite, the maximum character limit we've observed so far is 1946 on a single message."
-        },
-        {
-          "text": "Is there a way to pass a context variable to cloud function?"
-        },
-        {
-          "text": "Hello, I'm using Watson Assistant service. I'm trying to compare the -number entity with a numeric value that I have saved in a $context variable. How can I find the correct syntax to do this? I have tried several ways but I get different errors"
-        }
-      ],
-      "description": "general intent about context variables"
-    },
-    {
-      "intent": "feature-support-general_entity",
-      "examples": [
-        {
-          "text": "How about this entity?"
-        },
-        {
-          "text": "How do I use entities?"
-        },
-        {
-          "text": "I want to know the exact format for including entities in intents."
-        },
-        {
-          "text": "Can I include entities in intent example?"
-        },
-        {
-          "text": "What is an entity?"
-        }
-      ],
-      "description": "user has a general question about entities"
-    },
-    {
-      "intent": "feature-support-request_beta",
-      "examples": [
-        {
-          "text": "If you create an AI Watson Assistant service, then you launch the tool and select Skills (was Watson Conversation Workspace...), there was a button to request access to the Beta version."
-        },
-        {
-          "text": "I need beta access for this tool"
-        },
-        {
-          "text": "How can I ask for access to beta for WA?"
-        },
-        {
-          "text": "these are the 2 i would need beta access!"
-        },
-        {
-          "text": "and the other one is getting beta access to the WA"
-        },
-        {
-          "text": "request beta access"
-        },
-        {
-          "text": "Hello I am an IBMer and I'd like to try search skills of Watson Assistant bur I don't see any link to \"request beta\" access"
-        },
-        {
-          "text": "need beta access to WA"
-        }
-      ],
-      "description": "User wants to get into the Closed Beta program and can't find it or is having an error"
-    },
-    {
-      "intent": "feature-support-how_to_make_callout",
-      "examples": [
-        {
-          "text": "How can I connect to database from watson?"
-        }
-      ],
-      "description": "user wants to know how to connect anything to watson"
-    },
-    {
-      "intent": "support-upgrade_error",
-      "examples": [
-        {
-          "text": "yes. have tried to upgrade from standard to plus and received the following error: Could not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
-        },
-        {
-          "text": "Change pricing planCould not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
-        },
-        {
-          "text": "i went to user upgrade plan and i recieve: 500: Internal server errorThis page can’t be displayed because of an error on the IBM Cloud server. Try again later, or check the IBM Cloud status page for info."
-        },
-        {
-          "text": "Have tried upgrading within the assistant, but currently receive an error message."
-        },
-        {
-          "text": "I followed those steps, but got an error when submitting the upgrade."
-        },
-        {
-          "text": "Could not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
-        },
-        {
-          "text": "thats the error when I try to update the lite instance to std licence"
-        }
-      ],
-      "description": "user is seeing an error when trying to upgrade their instance"
-    },
-    {
-      "intent": "feature-support-deploying_watson",
-      "examples": [
-        {
-          "text": "i used watson assistance to develop a simple chat bot.. i was just learning i need to test it in my website"
-        },
-        {
-          "text": "Hi can you please help deploying chat bot in my website"
-        },
-        {
-          "text": "but please let me know How can I Deploy my watson Assistant to a website"
-        },
-        {
-          "text": "I have a question about integrate my watson assistant to my web site"
-        },
-        {
-          "text": "I want to deploy watson bot on my blogspot site"
-        }
-      ],
-      "description": "user wants to know how to deploy watson to a channel"
-    },
-    {
-      "intent": "support-cant_create_case",
-      "examples": [
-        {
-          "text": "You do not have the right permissions to open cases"
-        },
-        {
-          "text": "Unfortunately I do not have the permissions right now to create a case. I will have to reach out to my account manager"
-        },
-        {
-          "text": "Im afraid a have no the right permissions"
-        },
-        {
-          "text": "looks like I do not have the permissions to create a case"
-        }
-      ],
-      "description": "User doesn't have permission to create a case"
-    },
-    {
-      "intent": "support-general_error",
-      "examples": [
-        {
-          "text": "I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
-        },
-        {
-          "text": "Hi! I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
-        },
-        {
-          "text": "Assistant doesn't respond to a condition of a dialog node when it should"
-        },
-        {
-          "text": "im trying to access the logs created during user conversations with assistant"
-        },
-        {
-          "text": "i'm getting an error"
-        },
-        {
-          "text": "So it seems to be an internal error"
-        },
-        {
-          "text": "It's ok, I'm trying different syntaxs but I still get errors"
-        },
-        {
-          "text": "Error skills could not be loaded this time. Internal Server error"
-        },
-        {
-          "text": "Error Integrations could not be loaded this time. Internal Server error"
-        },
-        {
-          "text": "I get a dialog error saying \"ErrorUnable to create version. Error: an error occurred. \""
-        },
-        {
-          "text": "ErrorAssistants could not be loaded at this time. Internal Server Error. View 3 more errors."
-        },
-        {
-          "text": "I need to delete this service, but it gives an error message when I try to delete it.The error message reads as follows:An error (10001) occurred while deleting the service."
-        },
-        {
-          "text": "i created an node that expects the user to type his issue with a certain response, but if i send over 2045 characters in the same message the funcion that stores it doesnt work"
-        },
-        {
-          "text": "Hello colleagues. I am renaming a node in the Dialog. But the object \"nodes_visited\" keeps with the same name. Is that a known bug?"
-        },
-        {
-          "text": "importing a corpus in .json format in Watson, the names of dialog nodes are blank"
-        },
-        {
-          "text": "missing artifact error when configuring Maven with Assistant"
-        },
-        {
-          "text": "Hi there, since some days im experiencing an issue with the conditions within a node . For some fields it says that the Intent/Entity has no examples altough that isnt true. Do you have an issue on your behalf?"
-        },
-        {
-          "text": "It worked earlier, but it's not woerking now"
-        },
-        {
-          "text": "but it is not working as expected"
-        },
-        {
-          "text": "it doesn't work when they use it"
-        },
-        {
-          "text": "but it is not working"
-        },
-        {
-          "text": "I'm experiencing an issue with Watson assistant"
-        },
-        {
-          "text": "I have some issues on Watson Assistant"
-        },
-        {
-          "text": "There are a bug in Watson Assistant"
-        },
-        {
-          "text": "so that's not going to be helpful :)"
-        },
-        {
-          "text": "How could I fiix this issue?"
-        },
-        {
-          "text": "if can't, have no problem"
-        },
-        {
-          "text": "I'm having a problem here"
-        },
-        {
-          "text": "try it on watson assistant detects what dialog node it should go and says what entities are detected however, right now it doesn't"
-        },
-        {
-          "text": "could you tell me how I can see the entities that you recognize using \"Try it out\"?"
-        },
-        {
-          "text": "I am unable to see the triggered entities in the try it out pane."
-        },
-        {
-          "text": "Are the entities not visible now in the 'Try Out' pane?"
-        },
-        {
-          "text": "in Try it out, it recognize intent only but entities"
-        },
-        {
-          "text": "Hi there, I've been using Watson Assistant for one year, and today the entities identified do not appear in the 'Try it out' panel"
-        },
-        {
-          "text": "im trying recognize the entities in the 'try it' screen"
-        },
-        {
-          "text": "Hello, I'm using Watson Assistant, and in the 'Try it out' panel I cannot see the entities that have been identified"
-        },
-        {
-          "text": "hi there, I was encountering an issue right now about watson assistant (try it function)"
-        },
-        {
-          "text": "Got following error response from Watson Assistant at 2019-03-25T19:49:42. The issue seems to be intermittent because the same request returns successful response if we execute it now."
-        },
-        {
-          "text": "the problem is there"
-        },
-        {
-          "text": "is there any issue ?"
-        },
-        {
-          "text": "and its not working :("
-        },
-        {
-          "text": "Hi, I have a problem cloning skills"
-        }
-      ],
-      "description": "generic error message from which other branches should be added (training_error, loading_error, system_error, etc.)"
-    },
-    {
-      "intent": "support-cant_import",
-      "examples": [
-        {
-          "text": "I am trying to use import function for a skill"
-        },
-        {
-          "text": "mainly, I tried to import a new version to my skill"
-        },
-        {
-          "text": "I can't import a skill over an existint skill. The impot button does not work"
-        },
-        {
-          "text": "and i am trying to import a skill in an existent skill, but import function is not working"
-        },
-        {
-          "text": "When I click \"Import\" it just hangs there doing nothing ?"
-        },
-        {
-          "text": "No Erros, but on clicking import button, nothing happens"
-        },
-        {
-          "text": "When I select the button \"import\" nothing happens"
-        },
-        {
-          "text": "I click the import button, but nothing happens"
-        },
-        {
-          "text": "after I click in Button Import, nothig happens"
-        },
-        {
-          "text": "but the import button isn't working"
-        },
-        {
-          "text": "The Import button of watson assistant is broken"
-        },
-        {
-          "text": "after clicking on red colored Import button, it does not proceed further; so I don't get to see choose json file button."
-        },
-        {
-          "text": "the import button of the skill doesnt show window to select a file to import"
-        },
-        {
-          "text": "when click the import button, apperar un frame around the button"
-        },
-        {
-          "text": "I need to up a version in Assistant e the button \"Import\" doesn`t work."
-        },
-        {
-          "text": "yes now it is not working after I click on 'import' button in the pop dialog box"
-        },
-        {
-          "text": "I tried to do it earlier and it worked, but now, when I click the import button, nothing happens"
-        },
-        {
-          "text": "I can't import a new skill"
-        },
-        {
-          "text": "I am unable to import skill"
-        },
-        {
-          "text": "Unable to import into an existing skil. The import button does not work"
-        }
-      ],
-      "description": "User can't import something into the tooling: skill, intents, etc."
-    },
-    {
-      "intent": "chit-chat-test_message",
-      "examples": [
-        {
-          "text": "Sorry, it was test chat message"
-        }
-      ],
-      "description": "user sends us a test message"
-    },
-    {
-      "intent": "feature-support-multi_skill",
-      "examples": [
-        {
-          "text": "do you have some reference architecture in order to orchestrar several skills in a assistant?"
-        },
-        {
-          "text": "I was wondering if we have the ability to add multiple skills to a single assistant?"
-        },
-        {
-          "text": "Can more than one skill be added to Virtual Assistant?"
-        },
-        {
-          "text": "but i am unable to add multiple skills to a single assistant"
-        },
-        {
-          "text": "can i associate more than one skill to Assistant?"
-        },
-        {
-          "text": "Hi do we have the ability to add multiple skills to a single assistant?"
-        }
-      ],
-      "description": "User wants to know about multi skill"
-    },
-    {
-      "intent": "support-open_a_case",
-      "examples": [
-        {
-          "text": "Can you help how do I can open a Case?"
-        },
-        {
-          "text": "can u please raise the ticket ?"
-        },
-        {
-          "text": "how to open the case"
-        },
-        {
-          "text": "how do i open a case"
-        },
-        {
-          "text": "please give me the link to raise the ticket"
-        }
-      ],
-      "description": "User wants to open a case or learn how to open one"
-    },
-    {
-      "intent": "feature-support-find_id",
-      "examples": [
-        {
-          "text": "What do the numbers of the node id's mean for example node_1_1491598463843': [0, 1, 0]"
-        },
-        {
-          "text": "how can i find the node ID"
-        },
-        {
-          "text": "I am trying to find the workspace ID"
-        },
-        {
-          "text": "how can i know the number of my node?"
-        },
-        {
-          "text": "Where is the deploy button, I need to find Workspace ID."
-        },
-        {
-          "text": "i can look for it, don't worry :) i just need to know how can i find the number of the node"
-        },
-        {
-          "text": "yes, but my initial question is, how can i find the node with that ID? my nodes have names, but the error is showing me a number ID"
-        }
-      ],
-      "description": "user is looking for node, workspace, skill, or assistant ID"
-    },
-    {
-      "intent": "feature-support-api",
-      "examples": [
-        {
-          "text": "Is there an api fo create versions of skills?"
-        },
-        {
-          "text": "Which credential do I use when working with WordPress? Api key or username password?"
-        },
-        {
-          "text": "Hello. I'm currently using credentials for API v1 (version 1)How do I get API v2 credentials?Thanks"
-        },
-        {
-          "text": "How/where do I run an api command ?."
-        }
-      ],
-      "description": "User needs help with the api"
-    },
-    {
-      "intent": "feature-support-general_dialog",
-      "examples": [
-        {
-          "text": "i am trying to understand how to open child dialog nodes"
-        },
-        {
-          "text": "conversation dialog entity literal isnt working"
-        },
-        {
-          "text": "Unable to add sibling node. Error: Maximum dialog_nodes limit exceeded. Limit = 500, Maximum dialog_nodes limit exceeded. Limit = 500."
-        },
-        {
-          "text": "When I request a dialog, whatson assistant return another name in \"nodes visited\""
-        },
-        {
-          "text": "What is the expected behaviour when I set the input.options.restart to true? I expected to receive a conversation_start or a welcome special condition. But, when we tried to use it, it doesn't affect my dialog."
-        },
-        {
-          "text": "We´re having instability in one of our Dialog Node (#Abrir_Chamado). When the user utterance triggers the intent #Abrir_chamado, the system is supposed to fill the first slot, but it's returning a blank message."
-        },
-        {
-          "text": "Server-side callout failed error when calling a Cloud Function within a dialog"
-        },
-        {
-          "text": "Dialog is not answering if anything else is above the node"
-        },
-        {
-          "text": "I'm not able to add dialog for my Entities."
-        }
-      ],
-      "description": "user has general question about dialog"
-    },
-    {
-      "intent": "chit-chat-tell_joke",
-      "examples": [
-        {
-          "text": "make me laugh"
-        },
-        {
-          "text": "tell me a joke"
-        }
-      ],
-      "description": "user wants watson to be funny like Mitch"
-    },
-    {
-      "intent": "feature-support-integrations_speech",
-      "examples": [
-        {
-          "text": "I want to add voice to text to my bot"
-        },
-        {
-          "text": "I want to use voice to text in my bot"
-        },
-        {
-          "text": "Hello, can you please tell me how to activate text to voice?"
-        },
-        {
-          "text": "Hello. Can you tell me how to set up text to voice - vocie to text for my bot?"
-        },
-        {
-          "text": "Hello, I want to add voice to text to my bot , can yu explain how to do this/"
-        },
-        {
-          "text": "voice to text in my bot"
-        }
-      ],
-      "description": "user wants to add voice to their bot"
-    },
-    {
-      "intent": "chit-chat-thanks",
-      "examples": [
-        {
-          "text": "wow, thank you!"
-        },
-        {
-          "text": "Thanks so much!"
-        },
-        {
-          "text": "Thank you guys!"
-        },
-        {
-          "text": "got it, thanks."
-        },
-        {
-          "text": "hey thank you"
-        },
-        {
-          "text": "thanks a lot"
-        },
-        {
-          "text": "ok thank you very much for your quick support :)"
-        },
-        {
-          "text": "Thank you sir"
-        },
-        {
-          "text": "perfect thank you"
-        },
-        {
-          "text": "Thank you so much!"
-        },
-        {
-          "text": "Got it. Thank you!"
-        },
-        {
-          "text": "Thank you again."
-        },
-        {
-          "text": "Got you, thanks!"
-        },
-        {
-          "text": "And thank you!!!"
-        },
-        {
-          "text": "will do, thanks"
-        }
-      ],
-      "description": "User thanks bot"
-    },
-    {
-      "intent": "feature-support-integrations",
-      "examples": [
-        {
-          "text": "I am thinking to integrate whatsapp to my chat bot"
-        },
-        {
-          "text": "Hello, I need to help to configure watson with facebook messenger. Would you help me?"
-        },
-        {
-          "text": "i need a tutorial to integrate watson to facebook messenger"
-        }
-      ],
-      "description": "user needs help with creating an integration"
-    },
-    {
-      "intent": "chit-chat-greetings",
-      "examples": [
-        {
-          "text": "hello"
-        },
-        {
-          "text": "hi there"
-        }
-      ],
-      "description": "user greets the bot"
-    },
-    {
-      "intent": "non-functional-cf_to_rc_migration",
-      "examples": [
-        {
-          "text": "I am getting this error: Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
-        },
-        {
-          "text": "Hey ! So We have 1 instance using std licence for Watson assistant and another one using the lite licence. I'm trying to upgrade my lite licence to std in order to have 2 instances and 2 std lisence. But I am getting this error : Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
-        },
-        {
-          "text": "Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
-        }
-      ],
-      "description": "user has question or problem about cloud foundry to resource controller migration"
-    },
-    {
-      "intent": "support-already_created_ticket",
-      "examples": [
-        {
-          "text": "and i tried creating a ticket"
-        },
-        {
-          "text": "i'm also unable to post a support ticket, also getting an error message"
-        },
-        {
-          "text": "I already created a ticket"
-        },
-        {
-          "text": "I opened a ticket but this is not helping. So I'll describe to you what I did maybe you can help"
-        }
-      ],
-      "description": "User has already created a ticket"
-    },
-    {
-      "intent": "sales-pricing_question",
-      "examples": [
-        {
-          "text": "pricing of Watson service"
-        },
-        {
-          "text": "what is the pricing to upgrade for plus plan in watson assitant?"
-        },
-        {
-          "text": "hi. can you please advise on how much it would cost to upgrade from the standard to plus plan?"
-        },
-        {
-          "text": "How much is extra charge if I upgrade to plus"
-        }
-      ],
-      "description": "User wants to know about the pricing of WA"
-    },
-    {
-      "intent": "feature-support-auto_learn",
-      "examples": [
-        {
-          "text": "how does wa improve"
-        },
-        {
-          "text": "Im interested in how the watson assistant improves when people are using the assistant on our website?"
-        },
-        {
-          "text": "how does watson learn"
-        }
-      ],
-      "description": "user wants to know how watson learns on its own :o"
-    },
-    {
-      "intent": "feature-support-log_data_outside_skill",
-      "examples": [
-        {
-          "text": "Is there a way to enable log data across instances?"
-        }
-      ],
-      "description": "user wants to know how to enable log data outside of the current skill or instance"
-    },
-    {
-      "intent": "feature-support-gdpr",
-      "examples": [
-        {
-          "text": "I am implementing the https://cloud.ibm.com/apidocs/assistant#data-handling and wanted to verify, if customer_id is indeed set when calling the watson api"
-        }
-      ],
-      "description": "user has a question about how watson supports gdpr and how to implement it"
-    },
-    {
-      "intent": "support-chat_disconnected",
-      "examples": [
-        {
-          "text": "Hello, I was talking to Nayra I think, and the chat closed"
-        },
-        {
-          "text": "and the chat disconnected.."
-        },
-        {
-          "text": "Sorry My chat went away"
-        }
-      ],
-      "description": "user was chatting with a human before and wants to reconnect"
-    },
-    {
-      "intent": "feature-support-import",
-      "examples": [
-        {
-          "text": "I just wanted to know how can I fetch the json from one instance to another"
-        },
-        {
-          "text": "I have used 2 instance pf watson, I want to upload JSON changes of one instance into other instance"
-        }
-      ],
-      "description": "user wants to learn how to import something"
-    },
-    {
-      "intent": "support-api_response_error",
-      "examples": [
-        {
-          "text": "Test failed. Error: Dialog Service Error: Processing error"
-        },
-        {
-          "text": "http response error 500"
-        },
-        {
-          "text": "Bad Gateway when using cursor by logs export API"
-        },
-        {
-          "text": "Bluemix Assets - 404 Not Found: Requested route ('watson-assistant."
-        },
-        {
-          "text": "Im getting an internal server error while launching Visual recognition service tool{\"code\":500,\"error\":\"Internal Server Error\",\"message\":\"While posting, service_key endpoint returned status code: 502\",\"reason\":\"Unknown error occurred\"}it happens always.Any help appreciated"
-        },
-        {
-          "text": "Bluemix Assets - Error 500 in calls to Watson Conversation."
-        },
-        {
-          "text": "Error 500 - Internal Server Error"
-        },
-        {
-          "text": "Consistent 504 errors from the Conversation API"
-        },
-        {
-          "text": "```{ \"error\": \"invalid request\", \"code\": 400}```"
-        },
-        {
-          "text": "Bluemix Assets - Application request returns 404"
-        },
-        {
-          "text": "http Errorcode 401 not specified in swagger file"
-        },
-        {
-          "text": "Hi,I'm getting an internal server error when using the following api:https://gateway.watsonplatform.net/conversation/api/v1/workspaces/{0}/message?version={1} (where {0} is the workspace id, and {1} is DateTime.Today).This wasn't happening roughly 1/2 weeks ago."
-        },
-        {
-          "text": "Bluemix Assets - ERROR Code 404 Launching Watson Conversation"
-        },
-        {
-          "text": "Manage Credentials page displays 500: Internal server error"
-        },
-        {
-          "text": "Connections are failing to Watson Assistant"
-        },
-        {
-          "text": "Delay in getting a response from Watson Assistant took 10 seconds"
-        },
-        {
-          "text": "but when I use the /api/message i am getting Error: Resource not found"
-        },
-        {
-          "text": "hello I have a problem with watson API... I'm using get intents endpoint and I'm having the error \"Rate limit exceeded\""
-        },
-        {
-          "text": "Bluemix Assets - api.js:52 POST API error 404 not Found"
-        },
-        {
-          "text": "WatsonException: Error: Unsupported Media Type, Code: 415"
-        },
-        {
-          "text": "\"HTTP 500 Internal Server ErrorContent-Type: application/jsonX-Error-Cause: Zuul Error: SHORTCIRCUIT\""
-        },
-        {
-          "text": "Undefined Server Error Occurred"
-        },
-        {
-          "text": "Now I’m getting 500's from the message endpoint with “Classification Error: Protocol error”"
-        },
-        {
-          "text": "Hello, we are having issues with watson API requests, we are using get intents endpoint (https://cloud.ibm.com/apidocs/assistant#list-intents) and I'm having the error \"Rate limit exceeded\" code:429"
-        },
-        {
-          "text": "Watson assistant is not responding"
-        },
-        {
-          "text": "<@U0GTH89H6> Its not just the tooling `error: { [Error: [object Object]] code: 500, error: 'Conversation Service returned: undefined' } `"
-        },
-        {
-          "text": "Hi guys, I'm getting the following error when using NLU analyze endpoint:``` error: \"cannot analyze: downstream issue\" code: 500```What could it be?"
-        }
-      ],
-      "description": "user receives an error from calling the api"
-    },
-    {
-      "intent": "support-speak_other_language",
-      "examples": [
-        {
-          "text": "Can I speak in portuguese?"
-        },
-        {
-          "text": "you speak portuguese?"
-        },
-        {
-          "text": "I'm from Brazil and I don't speak English very well"
-        },
-        {
-          "text": "has someone whoose speak portuguese in there?"
-        },
-        {
-          "text": "Brazilian words are not intepreted correctly"
-        },
-        {
-          "text": "Do you speak portuguese ?"
-        },
-        {
-          "text": "Speak in Portuguese?"
-        }
-      ],
-      "description": "User wants to know if watson or human can speak another language"
-    },
-    {
-      "intent": "feature-support-access_logs",
-      "examples": [
-        {
-          "text": "How can I check the data traffic with Improve at IBM Watson Assistant?"
-        },
-        {
-          "text": "I have one technical question. I am on my watson skill. I see some analytics panel of the skill conversation. Is it possible to extract it and include in my web?"
-        },
-        {
-          "text": "I want to export that usage data"
-        },
-        {
-          "text": "Is it possible to access the watson logs via Web interface, or do I have to query the logs using the logging api?"
-        },
-        {
-          "text": "is it possible to access the logs of the conversation via web interface?"
-        },
-        {
-          "text": "hi there, need to understand if there's a way to export the \"User conversation\" data from the analytics dashboard to Excel."
-        },
-        {
-          "text": "I have query regarding Watson Skill. I see in the skill panel there's some analytics of conversation. Can I extract this analytics from IBM ?"
-        },
-        {
-          "text": "Hi, I would like to know if I have the option to import the info to an excel file..."
-        },
-        {
-          "text": "I want to export a report from the IBM Watson assistant improve tab"
-        },
-        {
-          "text": "hi - id like to have a way to export the user conversations to generate reports for hte teams that make use of the chat bots. is there a way to programatically or otherwise do this?"
-        },
-        {
-          "text": "i'm looking at the dashboard for our chatbot and i'd like to export the data represented here to excel"
-        },
-        {
-          "text": "Is it possible to export the data from the Improve Section of a Watson Assistant Skill"
-        },
-        {
-          "text": "Hi, I would like to know if it's possible to import the info from the scorecard to an excel file..."
-        }
-      ],
-      "description": "user wants to know how to access the logs"
-    },
-    {
-      "intent": "non-functional-is_watson_secure",
-      "examples": [
-        {
-          "text": "are chat logs stored in a secure database?"
-        }
-      ],
-      "description": "user wants to know about the security of watson"
-    },
-    {
-      "intent": "support-training_error",
-      "examples": [
-        {
-          "text": "Error, An error occurred while training watson"
-        },
-        {
-          "text": "Hi, sirs, I am doing a chatbot and the \"Try it\" screen shows \"Watson is training\" for the last ten minutes so I cant test. Any bug?"
-        },
-        {
-          "text": "Error - An error occurred while training watson"
-        }
-      ],
-      "description": "user encountered a training error when retraining the classifier"
-    },
-    {
-      "intent": "chit-chat-still_there",
-      "examples": [
-        {
-          "text": "Are you still here ?"
-        },
-        {
-          "text": "Are you still there?"
-        }
-      ],
-      "description": "user wants to confirm presence of the bot"
-    }
-  ],
-  "entities": [
-    {
-      "entity": "confirm",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "yes",
-          "synonyms": [
-            "ya",
-            "yeah",
-            "yep"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "no",
-          "synonyms": [
-            "nah",
-            "ney",
-            "nope"
-          ]
-        }
-      ],
-      "fuzzy_match": true
-    }
-  ],
-  "language": "en",
-  "metadata": {
-    "api_version": {
-      "major_version": "v1",
-      "minor_version": "2018-09-20"
-    }
-  },
-  "description": "",
-  "dialog_nodes": [
-    {
-      "type": "standard",
-      "title": "Using Entities",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Entities are the 'nouns' that inform Intents.  <br><br>You can learn more about adding them to your Assistant at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-entities\" target=\"_blank\">Creating Entities.</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-general_entity",
-      "user_label": "Using Entities with Intents",
-      "dialog_node": "node_12_1558619942385",
-      "previous_sibling": "node_11_1558619903040"
-    },
-    {
-      "type": "standard",
-      "title": "Importing Skills",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "To add an existing skill to your Assistant, you can import it as a JSON file.<br><br>See here for details on how to do this:  <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-skill-dialog-add#skill-dialog-add-task\" target=\"_blank\">Creating a Dialog Skill</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-import",
-      "user_label": "Importing Dialog Skills",
-      "dialog_node": "node_14_1558620039771",
-      "previous_sibling": "node_13_1558619979389"
-    },
-    {
-      "type": "standard",
-      "title": "Available Integrations",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "You can check out available integrations at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-deploy-integration-add\" target=\"_blank\">Adding Integrations</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-integrations",
-      "user_label": "Available Integrations",
-      "dialog_node": "node_15_1558620082622",
-      "previous_sibling": "node_14_1558620039771"
-    },
-    {
-      "type": "standard",
-      "title": "Using the WA API",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "It seems like you want information on using our APIs.  This is a link to our documentation that might help:  <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-api-overview\" target=\"_blank\">Watson Assistant API Overview</a>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-api",
-      "user_label": "WA API Documentation",
-      "dialog_node": "node_4_1558619584544",
-      "previous_sibling": "node_3_1558619527835"
-    },
-    {
-      "type": "standard",
-      "title": "Deploying Watson",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Deploying (or Integrating) your Assistant isn't complicated.  There are even built-in integrations for popular channels like Facebook Messenger, Slack, and others.  <br><br>See more at this link in our Documentation: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-deploy-integration-add#deploy-integration-add-task\" target=\"_blank\">Integrating/Deploying your Assistant</a>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-deploying_watson",
-      "user_label": "Documentation on getting started with Deploying/Integrations",
-      "dialog_node": "node_7_1558619717015",
-      "previous_sibling": "node_6_1558619676218"
-    },
-    {
-      "type": "standard",
-      "title": "Context Variable Feature Support",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Context, and the \"context variables\" it contains persist throughout a conversation.  <br><br>Learn more about what they are and how to implement them at this link <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-api-client-get-context\" target=\"_blank\">Accessing Context Data</a>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-context_variables",
-      "user_label": "Documentation on Context Variables",
-      "dialog_node": "node_6_1558619676218",
-      "previous_sibling": "node_5_1558619621038"
-    },
-    {
-      "type": "standard",
-      "title": "User wants to know how Watson Learns",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Watson Assistant uses advanced Natural Language Processing (NLP) and Machine Learning Techniques under the covers that are too complicated to explain here. <br><br>Here is a link to the <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index-how-it-works\" target=\"_blank\">Watson Assistant Overview</a> that will help you to understand the overall process you will follow to create your chatbot virtually without any code!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-auto_learn",
-      "user_label": "How does Watson Learn",
-      "dialog_node": "node_5_1558619621038",
-      "previous_sibling": "node_4_1558619584544"
-    },
-    {
-      "type": "standard",
-      "title": "Information Security (GPDR etc.)",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "If you are interested in learning more about Watson Assistant's Information Security please see this link <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-information-security\" target=\"_blank\">Watson Assistant Information Security</a>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-gdpr",
-      "user_label": "Documentation on Watson Assistant Information Security",
-      "dialog_node": "node_9_1558619808425",
-      "previous_sibling": "node_8_1558619778410"
-    },
-    {
-      "type": "standard",
-      "title": "Watson Assistant General question",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Here's a link to our <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-tool-overview\" target=\"_blank\">Product Overview.</a> In it you will learn about the basic features available in Watson Assistant. <br><br>"
-              },
-              {
-                "text": ""
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "If there is a feature you'd like to see in Watson Assistant that isn't available, we'd love to hear from you.  Check out this link to let us know:  <a href=\"https://ibm-data-and-ai.ideas.aha.io/\" target=\"_blank\">IBM Data and AI aha Ideas</a>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-general",
-      "user_label": "Feature support in Watson Assistant",
-      "dialog_node": "node_10_1558619836484",
-      "previous_sibling": "node_9_1558619808425"
-    },
-    {
-      "type": "standard",
-      "title": "How many Skills are permitted",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "The number of skills you can create depends on your Watson Assistant plan type. <br><br> This link has the details: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-skill-add#skill-add-limits\" target=\"_blank\">Skill Limits by plan type</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-multi_skill",
-      "user_label": "Skill Limits",
-      "dialog_node": "node_18_1558620189852",
-      "previous_sibling": "node_17_1558620139539"
-    },
-    {
-      "type": "standard",
-      "title": "Beta Program Request",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Follow this link to find out how to join our Beta program:  <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-feedback#feedback-beta\" target=\"_blank\">Participate in the beta program</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-request_beta",
-      "user_label": "Request to be in Beta Program",
-      "dialog_node": "node_19_1558620242728",
-      "previous_sibling": "node_18_1558620189852"
-    },
-    {
-      "type": "standard",
-      "title": "Making Callouts",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "You can extend the functionality of your Assistant by creating webhook callouts to your dialog nodes.  <br><br>This Beta feature is described in detail at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-dialog-webhooks\" target=\"_blank\">Adding a webhook callout to a dialog node</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-how_to_make_callout",
-      "user_label": "Making Callouts",
-      "dialog_node": "node_13_1558619979389",
-      "previous_sibling": "node_12_1558619942385"
-    },
-    {
-      "type": "standard",
-      "title": "Log Data Information",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "You can use log data information to improve your Assistant based on data collected from every conversation it has.  <br><br>With PREMIUM instances, these logfiles can be shared across instances.  <br><br>This documentation link has the details: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-logs#logs-pick-data-source\" target=\"_blank\">Improving your Skills using built in Analytics</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-log_data_outside_skill",
-      "user_label": "Using Log Data to improve your Assistant's Skills",
-      "dialog_node": "node_17_1558620139539",
-      "previous_sibling": "node_16_1558620108380"
-    },
-    {
-      "type": "standard",
-      "title": "Speech Integration",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Currently, speech integration is not a built in function of Watson Assistant.<br><br>However, Here's a tutorial on how to leverage Watson Speech to Text and Text to Speech to Enhance your Watson Assistant with Speech capabilities: <a href=\"https://developer.ibm.com/patterns/create-a-web-based-voice-chatbot/\" target=\"_blank\">Voicebot Code Pattern from IBM Developer</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-integrations_speech",
-      "user_label": "Integrating Speech with your Assistant",
-      "dialog_node": "node_16_1558620108380",
-      "previous_sibling": "node_15_1558620082622"
-    },
-    {
-      "type": "standard",
-      "title": "Find Node, Workspace, Skill, Assistant IDs",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "To see the Assistant ID, navigate to the Assistants Tab, then Options (three vertical dots on right of each Assistant Instance), then choose Settings, then API Details.<br>br>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "To see the Skill or Workspace ID, navigate to the Skills Tab, then Options (three vertical dots on top right of each Skill Instance), then choose View API Details<br><br>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "To see Node ID, open the exported JSON for a skill and search for the ID referred to in the error message and refer to the \"user_label\" corresponding to the Node ID to identify the node requiring attention."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-find_id",
-      "user_label": "How to find the Node, Workspace, Skill, Assistant corresponding to an ID",
-      "dialog_node": "node_8_1558619778410",
-      "previous_sibling": "node_7_1558619717015"
-    },
-    {
-      "type": "standard",
-      "title": "Adding Dialog Nodes",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Adding Dialog Nodes is performed from the Dialog tab within a skill.<br><br>Information about how to add, move, and populate Dialog Nodes on this page is documented at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-dialog-overview\" target=\"_blank\">Dialog Overview.</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-general_dialog",
-      "user_label": "Dialog Nodes Overview Documentation",
-      "dialog_node": "node_11_1558619903040",
-      "previous_sibling": "node_10_1558619836484"
-    },
-    {
-      "type": "standard",
-      "title": "Access WA logs",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Access the logs via Improve tab or API"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "If you want to learn more, read it here: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-logs-resources\" target=\"_blank\">Assistant Logs Documentation</a>"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1558464636050",
-      "metadata": {},
-      "conditions": "#feature-support-access_logs",
-      "user_label": "Access Watson Assistant logs",
-      "dialog_node": "node_3_1558619527835"
-    },
-    {
-      "type": "standard",
-      "title": "Confirmation of presence",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Yes, I'm here silly human"
-              },
-              {
-                "text": "I serve at your pleasure"
-              },
-              {
-                "text": "At your service"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_2_1556910615078",
-      "metadata": {},
-      "conditions": "#chit-chat-still_there",
-      "user_label": "",
-      "dialog_node": "node_1_1558380282431",
-      "previous_sibling": "node_1_1555687266556"
-    },
-    {
-      "type": "standard",
-      "title": "Joke node",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "How much does a hipster weigh? <br> An Instagram!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_2_1556910615078",
-      "metadata": {},
-      "conditions": "#chit-chat-tell_joke",
-      "user_label": "Tell a joke",
-      "dialog_node": "node_1_1555687266556",
-      "previous_sibling": "node_1_1556909926235"
-    },
-    {
-      "type": "standard",
-      "title": "Greetings",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "hello there."
-              },
-              {
-                "text": "Hi!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_2_1556910615078",
-      "metadata": {},
-      "conditions": "#chit-chat-greetings",
-      "dialog_node": "node_1_1558380433202",
-      "previous_sibling": "node_3_1558380303005"
-    },
-    {
-      "type": "standard",
-      "title": "Test message",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Ok, no worries!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_2_1556910615078",
-      "metadata": {},
-      "conditions": "#chit-chat-test_message",
-      "dialog_node": "node_3_1558380303005",
-      "previous_sibling": "node_1_1558380282431"
-    },
-    {
-      "type": "standard",
-      "title": "Thank you",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "No problem I guess"
-              },
-              {
-                "text": "Yeah whatever"
-              },
-              {
-                "text": "Sure thing"
-              },
-              {
-                "text": "Of course, I exist for this."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_2_1556910615078",
-      "metadata": {},
-      "conditions": "#chit-chat-thanks",
-      "dialog_node": "node_1_1556909926235"
-    },
-    {
-      "type": "standard",
-      "title": "Assistant Security",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": " "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_22_1558620386190",
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_9_1558619808425"
-      },
-      "conditions": "#non-functional-is_watson_secure",
-      "user_label": "Assistant Data Security",
-      "dialog_node": "node_24_1558620455812",
-      "previous_sibling": "node_23_1558620408115"
-    },
-    {
-      "type": "standard",
-      "title": "Cloud Foundry to IAM/Resource Group Migration",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Here how to migrate from Cloud Foundry to Resource Groups: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=watson-migrate\" target=\"_blank\">Migrating from Cloud Foundry</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_22_1558620386190",
-      "metadata": {},
-      "conditions": "#non-functional-cf_to_rc_migration",
-      "user_label": "Migration from Cloud Foundry to Resource Groups",
-      "dialog_node": "node_23_1558620408115"
-    },
-    {
-      "type": "standard",
-      "title": "Pricing Plan Link",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "The various plans available to you are in our Catalog here: <a href=\"https://cloud.ibm.com/catalog/services/watson-assistant\" target=\"_blank\">Watson Assistant Catalog Listing</a> "
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_4_1556910658431",
-      "metadata": {},
-      "conditions": "#sales-pricing_question",
-      "user_label": "Pricing Plans",
-      "dialog_node": "node_25_1558620513585"
-    },
-    {
-      "type": "standard",
-      "title": "API response error",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "HTTP response codes in the 2xx range indicate success. A response in the 4xx range is some sort of failure, and a response in the 5xx range usually indicates an internal system error that cannot be resolved by the user"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "values": [
-              {
-                "text": "If you have a further question about an API response error, you can get in touch with a human below."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "response_type": "connect_to_agent"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-api_response_error",
-      "user_label": "API response error",
-      "dialog_node": "node_2_1559071542141",
-      "previous_sibling": "node_1_1559070951813"
-    },
-    {
-      "type": "standard",
-      "title": "Open a support ticket",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "I can't help open a ticket for you yet, so I'll need to connect you with a human to help."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-open_a_case",
-      "user_label": "Open a support ticket",
-      "dialog_node": "node_7_1559072238807",
-      "previous_sibling": "node_6_1559071927207"
-    },
-    {
-      "type": "standard",
-      "title": "Already created a ticket",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Ok, I understand that you already tried creating a ticket. Would you like me to put you in touch with a human to try to resolve the issue instead?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "title": "",
-            "options": [
-              {
-                "label": "Yes",
-                "value": {
-                  "input": {
-                    "text": "yes"
-                  }
+    "name": "prod",
+    "intents": [
+        {
+            "intent": "chit-chat-greetings",
+            "examples": [
+                {
+                    "text": "hello"
+                },
+                {
+                    "text": "hey Watson"
+                },
+                {
+                    "text": "hi there"
                 }
-              },
-              {
-                "label": "No",
-                "value": {
-                  "input": {
-                    "text": "no"
-                  }
+            ],
+            "description": "user greets the bot"
+        },
+        {
+            "intent": "chit-chat-still_there",
+            "examples": [
+                {
+                    "text": "Are you still here ?"
+                },
+                {
+                    "text": "Are you still there?"
                 }
-              }
             ],
-            "response_type": "option"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-already_created_ticket",
-      "user_label": "Already created a ticket",
-      "dialog_node": "node_1_1559070951813",
-      "previous_sibling": "node_8_1555687218729"
-    },
-    {
-      "type": "standard",
-      "title": "General Error",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "I'm sorry this isn't working for you, let me put you in touch with a human to help."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-general_error",
-      "user_label": "Error with Watson Assistant",
-      "dialog_node": "node_6_1559071927207",
-      "previous_sibling": "node_5_1559071760172"
-    },
-    {
-      "type": "standard",
-      "title": "Speak another language",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Sorry, I only understand English but let me find a human that can help you out!"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-speak_other_language",
-      "user_label": "Speak another language",
-      "dialog_node": "node_8_1559072665916",
-      "previous_sibling": "node_7_1559072238807"
-    },
-    {
-      "type": "standard",
-      "title": "Can't import",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "I'm sorry you're having trouble with importing. Let me see if a human can help you."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-cant_import",
-      "user_label": "Can't import",
-      "dialog_node": "node_4_1559071695347",
-      "previous_sibling": "node_3_1559071651731"
-    },
-    {
-      "type": "standard",
-      "title": "Chat disconnected",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Ok, I understand that your prior chat was disconnected. A human should be able to help you out here."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-chat_disconnected",
-      "user_label": "Chat disconnected",
-      "dialog_node": "node_5_1559071760172",
-      "previous_sibling": "node_4_1559071695347"
-    },
-    {
-      "type": "standard",
-      "title": "Can't create a support ticket",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "I'm sorry you're having trouble creating a case. Let me put you in touch with someone who can help."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-cant_create_case",
-      "user_label": "Can't create a support ticket",
-      "dialog_node": "node_3_1559071651731",
-      "previous_sibling": "node_2_1559071542141"
-    },
-    {
-      "type": "standard",
-      "title": "Upgrade error",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Have you tried following the instructions here: <upgrade link>"
-              },
-              {
-                "text": "If that still doesn't work, I can get a human to help you."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-upgrade_error",
-      "user_label": "Upgrade error",
-      "dialog_node": "node_1_1559073945737",
-      "previous_sibling": "node_9_1559073026242"
-    },
-    {
-      "type": "standard",
-      "title": "Training error",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Arg, training errors are the worst! I'm going to escalate this to try to see what's going on."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "conditions": "#support-training_error",
-      "user_label": "Training error",
-      "dialog_node": "node_9_1559073026242",
-      "previous_sibling": "node_8_1559072665916"
-    },
-    {
-      "type": "standard",
-      "title": "Access error",
-      "output": {
-        "generic": []
-      },
-      "parent": "node_3_1556910647635",
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_1_1559762476065"
-      },
-      "conditions": "#support-access_error",
-      "user_label": "Can't access the tool",
-      "dialog_node": "node_8_1555687218729"
-    },
-    {
-      "type": "standard",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "If none of these articles help, you can open a <a href=\"https://cloud.ibm.com/unifiedsupport/cases/add\" target=\"_blank\">Support Case</a> to get in touch with a human."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1559762476065",
-      "metadata": {},
-      "conditions": "true",
-      "dialog_node": "node_1_1562624562402"
-    },
-    {
-      "type": "folder",
-      "title": "sales",
-      "metadata": {},
-      "dialog_node": "node_4_1556910658431",
-      "previous_sibling": "node_1_1558464636050"
-    },
-    {
-      "type": "folder",
-      "title": "technical support",
-      "metadata": {},
-      "dialog_node": "node_3_1556910647635",
-      "previous_sibling": "node_2_1556910615078"
-    },
-    {
-      "type": "folder",
-      "title": "chit chat",
-      "metadata": {},
-      "dialog_node": "node_2_1556910615078",
-      "previous_sibling": "Welcome"
-    },
-    {
-      "type": "standard",
-      "title": "Fallback Node",
-      "output": {
-        "generic": [
-          {
-            "query": "",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "node_1_1562624562402"
-      },
-      "conditions": "false",
-      "dialog_node": "node_1_1559762476065",
-      "previous_sibling": "node_22_1558620386190"
-    },
-    {
-      "type": "folder",
-      "title": "non-functional",
-      "metadata": {},
-      "dialog_node": "node_22_1558620386190",
-      "previous_sibling": "node_4_1556910658431"
-    },
-    {
-      "type": "folder",
-      "title": "feature support",
-      "metadata": {},
-      "dialog_node": "node_1_1558464636050",
-      "previous_sibling": "node_3_1556910647635"
-    },
-    {
-      "type": "standard",
-      "title": "Anything else",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Sorry, I don't know how to handle that. "
-              },
-              {
-                "text": "Mitch is the reason why I don't know the answer"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "metadata": {},
-      "conditions": "anything_else",
-      "dialog_node": "Anything else",
-      "previous_sibling": "node_1_1559762476065"
-    },
-    {
-      "type": "standard",
-      "title": "Welcome",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Hi there! <br> <br> I can help answer questions you may have about Watson Assistant. <br> <br> Quickly start with one of our options below or type your question in."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          },
-          {
-            "title": "",
-            "options": [
-              {
-                "label": "Request beta access",
-                "value": {
-                  "input": {
-                    "text": "Request beta access"
-                  }
-                }
-              },
-              {
-                "label": "Accessing WA chat logs",
-                "value": {
-                  "input": {
-                    "text": "export usage data"
-                  }
-                }
-              },
-              {
-                "label": "Make me laugh",
-                "value": {
-                  "input": {
+            "description": "user wants to confirm presence of the bot"
+        },
+        {
+            "intent": "chit-chat-tell_joke",
+            "examples": [
+                {
+                    "text": "make me laugh"
+                },
+                {
                     "text": "tell me a joke"
-                  }
                 }
-              }
             ],
-            "response_type": "option"
-          }
-        ]
-      },
-      "metadata": {},
-      "conditions": "welcome",
-      "dialog_node": "Welcome"
-    }
-  ],
-  "workspace_id": "10e19a04-a13f-4534-a823-3d92ff837bfe",
-  "counterexamples": [],
-  "system_settings": {
-    "tooling": {
-      "store_generic_responses": true
+            "description": "user wants watson to be funny like Mitch"
+        },
+        {
+            "intent": "chit-chat-test_message",
+            "examples": [
+                {
+                    "text": "Sorry, it was test chat message"
+                }
+            ],
+            "description": "user sends us a test message"
+        },
+        {
+            "intent": "chit-chat-thanks",
+            "examples": [
+                {
+                    "text": "And thank you!!!"
+                },
+                {
+                    "text": "got it, thanks."
+                },
+                {
+                    "text": "Got it. Thank you!"
+                },
+                {
+                    "text": "Got you, thanks!"
+                },
+                {
+                    "text": "hey thank you"
+                },
+                {
+                    "text": "ok thank you very much for your quick support :)"
+                },
+                {
+                    "text": "perfect thank you"
+                },
+                {
+                    "text": "thanks a lot"
+                },
+                {
+                    "text": "Thanks so much!"
+                },
+                {
+                    "text": "Thank you again."
+                },
+                {
+                    "text": "Thank you guys!"
+                },
+                {
+                    "text": "Thank you sir"
+                },
+                {
+                    "text": "Thank you so much!"
+                },
+                {
+                    "text": "will do, thanks"
+                },
+                {
+                    "text": "wow, thank you!"
+                }
+            ],
+            "description": "User thanks bot"
+        },
+        {
+            "intent": "feature-support-access_logs",
+            "examples": [
+                {
+                    "text": "hi - id like to have a way to export the user conversations to generate reports for hte teams that make use of the chat bots. is there a way to programatically or otherwise do this?"
+                },
+                {
+                    "text": "Hi, I would like to know if I have the option to import the info to an excel file..."
+                },
+                {
+                    "text": "Hi, I would like to know if it's possible to import the info from the scorecard to an excel file..."
+                },
+                {
+                    "text": "hi there, need to understand if there's a way to export the \"User conversation\" data from the analytics dashboard to Excel."
+                },
+                {
+                    "text": "How can I check the data traffic with Improve at IBM Watson Assistant?"
+                },
+                {
+                    "text": "I have one technical question. I am on my watson skill. I see some analytics panel of the skill conversation. Is it possible to extract it and include in my web?"
+                },
+                {
+                    "text": "I have query regarding Watson Skill. I see in the skill panel there's some analytics of conversation. Can I extract this analytics from IBM ?"
+                },
+                {
+                    "text": "i'm looking at the dashboard for our chatbot and i'd like to export the data represented here to excel"
+                },
+                {
+                    "text": "is it possible to access the logs of the conversation via web interface?"
+                },
+                {
+                    "text": "Is it possible to access the watson logs via Web interface, or do I have to query the logs using the logging api?"
+                },
+                {
+                    "text": "Is it possible to export the data from the Improve Section of a Watson Assistant Skill"
+                },
+                {
+                    "text": "I want to export a report from the IBM Watson assistant improve tab"
+                },
+                {
+                    "text": "I want to export that usage data"
+                }
+            ],
+            "description": "user wants to know how to access the logs"
+        },
+        {
+            "intent": "feature-support-api",
+            "examples": [
+                {
+                    "text": "Hello. I'm currently using credentials for API v1 (version 1)How do I get API v2 credentials?Thanks"
+                },
+                {
+                    "text": "How/where do I run an api command ?."
+                },
+                {
+                    "text": "Is there an api fo create versions of skills?"
+                },
+                {
+                    "text": "Which credential do I use when working with WordPress? Api key or username password?"
+                }
+            ],
+            "description": "User needs help with the api"
+        },
+        {
+            "intent": "feature-support-auto_learn",
+            "examples": [
+                {
+                    "text": "how does wa improve"
+                },
+                {
+                    "text": "how does watson learn"
+                },
+                {
+                    "text": "Im interested in how the watson assistant improves when people are using the assistant on our website?"
+                }
+            ],
+            "description": "user wants to know how watson learns on its own :o"
+        },
+        {
+            "intent": "feature-support-context_variables",
+            "examples": [
+                {
+                    "text": "can I store a dictionary in a context variable?"
+                },
+                {
+                    "text": "Does the input.text configuration on the context fields have a limit?(<? input.text ?>)On our chatsite, the maximum character limit we've observed so far is 1946 on a single message."
+                },
+                {
+                    "text": "Hello, I'm using Watson Assistant service. I'm trying to compare the -number entity with a numeric value that I have saved in a $context variable. How can I find the correct syntax to do this? I have tried several ways but I get different errors"
+                },
+                {
+                    "text": "Is there a way to pass a context variable to cloud function?"
+                },
+                {
+                    "text": "When I print the entity or try to save the value in a $context variable, it doesn't save the first 0"
+                }
+            ],
+            "description": "general intent about context variables"
+        },
+        {
+            "intent": "feature-support-deploying_watson",
+            "examples": [
+                {
+                    "text": "but please let me know How can I Deploy my watson Assistant to a website"
+                },
+                {
+                    "text": "Hi can you please help deploying chat bot in my website"
+                },
+                {
+                    "text": "I have a question about integrate my watson assistant to my web site"
+                },
+                {
+                    "text": "i used watson assistance to develop a simple chat bot.. i was just learning i need to test it in my website"
+                },
+                {
+                    "text": "I want to deploy watson bot on my blogspot site"
+                }
+            ],
+            "description": "user wants to know how to deploy watson to a channel"
+        },
+        {
+            "intent": "feature-support-find_id",
+            "examples": [
+                {
+                    "text": "how can i find the node ID"
+                },
+                {
+                    "text": "how can i know the number of my node?"
+                },
+                {
+                    "text": "I am trying to find the workspace ID"
+                },
+                {
+                    "text": "i can look for it, don't worry :) i just need to know how can i find the number of the node"
+                },
+                {
+                    "text": "What do the numbers of the node id's mean for example node_1_1491598463843': [0, 1, 0]"
+                },
+                {
+                    "text": "Where is the deploy button, I need to find Workspace ID."
+                },
+                {
+                    "text": "yes, but my initial question is, how can i find the node with that ID? my nodes have names, but the error is showing me a number ID"
+                }
+            ],
+            "description": "user is looking for node, workspace, skill, or assistant ID"
+        },
+        {
+            "intent": "feature-support-gdpr",
+            "examples": [
+                {
+                    "text": "I am implementing the https://cloud.ibm.com/apidocs/assistant#data-handling and wanted to verify, if customer_id is indeed set when calling the watson api"
+                }
+            ],
+            "description": "user has a question about how watson supports gdpr and how to implement it"
+        },
+        {
+            "intent": "feature-support-general",
+            "examples": [
+                {
+                    "text": "Great, thanks. So currently there is no way to tell who modified an Intent, Entity or Dialog, right?"
+                },
+                {
+                    "text": "What can WA do for me?"
+                },
+                {
+                    "text": "What features are available?"
+                }
+            ],
+            "description": "user has a general question about a feature"
+        },
+        {
+            "intent": "feature-support-general_dialog",
+            "examples": [
+                {
+                    "text": "conversation dialog entity literal isnt working"
+                },
+                {
+                    "text": "Dialog is not answering if anything else is above the node"
+                },
+                {
+                    "text": "i am trying to understand how to open child dialog nodes"
+                },
+                {
+                    "text": "I'm not able to add dialog for my Entities."
+                },
+                {
+                    "text": "Server-side callout failed error when calling a Cloud Function within a dialog"
+                },
+                {
+                    "text": "Unable to add sibling node. Error: Maximum dialog_nodes limit exceeded. Limit = 500, Maximum dialog_nodes limit exceeded. Limit = 500."
+                },
+                {
+                    "text": "We´re having instability in one of our Dialog Node (#Abrir_Chamado). When the user utterance triggers the intent #Abrir_chamado, the system is supposed to fill the first slot, but it's returning a blank message."
+                },
+                {
+                    "text": "What is the expected behaviour when I set the input.options.restart to true? I expected to receive a conversation_start or a welcome special condition. But, when we tried to use it, it doesn't affect my dialog."
+                },
+                {
+                    "text": "When I request a dialog, whatson assistant return another name in \"nodes visited\""
+                }
+            ],
+            "description": "user has general question about dialog"
+        },
+        {
+            "intent": "feature-support-general_entity",
+            "examples": [
+                {
+                    "text": "Can I include entities in intent example?"
+                },
+                {
+                    "text": "How about this entity?"
+                },
+                {
+                    "text": "How do I use entities?"
+                },
+                {
+                    "text": "I want to know the exact format for including entities in intents."
+                },
+                {
+                    "text": "What is an entity?"
+                }
+            ],
+            "description": "user has a general question about entities"
+        },
+        {
+            "intent": "feature-support-how_to_make_callout",
+            "examples": [
+                {
+                    "text": "How can I connect to database from watson?"
+                }
+            ],
+            "description": "user wants to know how to connect anything to watson"
+        },
+        {
+            "intent": "feature-support-import",
+            "examples": [
+                {
+                    "text": "I have used 2 instance pf watson, I want to upload JSON changes of one instance into other instance"
+                },
+                {
+                    "text": "I just wanted to know how can I fetch the json from one instance to another"
+                }
+            ],
+            "description": "user wants to learn how to import something"
+        },
+        {
+            "intent": "feature-support-integrations",
+            "examples": [
+                {
+                    "text": "Hello, I need to help to configure watson with facebook messenger. Would you help me?"
+                },
+                {
+                    "text": "I am thinking to integrate whatsapp to my chat bot"
+                },
+                {
+                    "text": "i need a tutorial to integrate watson to facebook messenger"
+                }
+            ],
+            "description": "user needs help with creating an integration"
+        },
+        {
+            "intent": "feature-support-integrations_speech",
+            "examples": [
+                {
+                    "text": "Hello, can you please tell me how to activate text to voice?"
+                },
+                {
+                    "text": "Hello. Can you tell me how to set up text to voice - vocie to text for my bot?"
+                },
+                {
+                    "text": "Hello, I want to add voice to text to my bot , can yu explain how to do this/"
+                },
+                {
+                    "text": "I want to add voice to text to my bot"
+                },
+                {
+                    "text": "I want to use voice to text in my bot"
+                },
+                {
+                    "text": "voice to text in my bot"
+                }
+            ],
+            "description": "user wants to add voice to their bot"
+        },
+        {
+            "intent": "feature-support-log_data_outside_skill",
+            "examples": [
+                {
+                    "text": "Is there a way to enable log data across instances?"
+                }
+            ],
+            "description": "user wants to know how to enable log data outside of the current skill or instance"
+        },
+        {
+            "intent": "feature-support-multi_skill",
+            "examples": [
+                {
+                    "text": "but i am unable to add multiple skills to a single assistant"
+                },
+                {
+                    "text": "can i associate more than one skill to Assistant?"
+                },
+                {
+                    "text": "Can more than one skill be added to Virtual Assistant?"
+                },
+                {
+                    "text": "do you have some reference architecture in order to orchestrar several skills in a assistant?"
+                },
+                {
+                    "text": "Hi do we have the ability to add multiple skills to a single assistant?"
+                },
+                {
+                    "text": "I was wondering if we have the ability to add multiple skills to a single assistant?"
+                }
+            ],
+            "description": "User wants to know about multi skill"
+        },
+        {
+            "intent": "feature-support-request_beta",
+            "examples": [
+                {
+                    "text": "and the other one is getting beta access to the WA"
+                },
+                {
+                    "text": "Hello I am an IBMer and I'd like to try search skills of Watson Assistant bur I don't see any link to \"request beta\" access"
+                },
+                {
+                    "text": "How can I ask for access to beta for WA?"
+                },
+                {
+                    "text": "If you create an AI Watson Assistant service, then you launch the tool and select Skills (was Watson Conversation Workspace...), there was a button to request access to the Beta version."
+                },
+                {
+                    "text": "I need beta access for this tool"
+                },
+                {
+                    "text": "need beta access to WA"
+                },
+                {
+                    "text": "request beta access"
+                },
+                {
+                    "text": "these are the 2 i would need beta access!"
+                }
+            ],
+            "description": "User wants to get into the Closed Beta program and can't find it or is having an error"
+        },
+        {
+            "intent": "non-functional-cf_to_rc_migration",
+            "examples": [
+                {
+                    "text": "Hey ! So We have 1 instance using std licence for Watson assistant and another one using the lite licence. I'm trying to upgrade my lite licence to std in order to have 2 instances and 2 std lisence. But I am getting this error : Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
+                },
+                {
+                    "text": "I am getting this error: Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
+                },
+                {
+                    "text": "Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
+                }
+            ],
+            "description": "user has question or problem about cloud foundry to resource controller migration"
+        },
+        {
+            "intent": "non-functional-is_watson_secure",
+            "examples": [
+                {
+                    "text": "are chat logs stored in a secure database?"
+                }
+            ],
+            "description": "user wants to know about the security of watson"
+        },
+        {
+            "intent": "sales-pricing_question",
+            "examples": [
+                {
+                    "text": "hi. can you please advise on how much it would cost to upgrade from the standard to plus plan?"
+                },
+                {
+                    "text": "How much is extra charge if I upgrade to plus"
+                },
+                {
+                    "text": "pricing of Watson service"
+                },
+                {
+                    "text": "what is the pricing to upgrade for plus plan in watson assitant?"
+                }
+            ],
+            "description": "User wants to know about the pricing of WA"
+        },
+        {
+            "intent": "support-access_error",
+            "examples": [
+                {
+                    "text": "After my log in with IBM ID, the watson assistant, occurs an error \"You are no longer logged in. Re-directing you to the login page.\""
+                },
+                {
+                    "text": "An access error has occurred to Watson Assistant (formerly Conversation) from our system.http error 503"
+                },
+                {
+                    "text": "and it gives me watson_developer_cloud.watson_service.WatsonApiException: Error: Unauthorized: Access is denied due to invalid credentials"
+                },
+                {
+                    "text": "Assistants could not be loaded at this time. Unable to fetch access token for account"
+                },
+                {
+                    "text": "cloud.ibm.com permission look identical on user but they have different level of access resources in resource group"
+                },
+                {
+                    "text": "Getting failed to access token when accessting the Asstant tooling"
+                },
+                {
+                    "text": "I can not create a new Watson Assistant instance. I get next error:The 'CTT_watson' service wasn't created because of network error."
+                },
+                {
+                    "text": "I get an error: Unauthorized access is denied to invalid credentials"
+                },
+                {
+                    "text": "in my workspace from watson assistant appears this message .Error while retrieving messages. Error: Analytics Error: Protocol error."
+                },
+                {
+                    "text": "issue I'd like to give access to our bot to remy.solutions and pierre.solutions"
+                },
+                {
+                    "text": "it ask me to login and my internal login is not helping"
+                },
+                {
+                    "text": "Multiple users unable to access watson conversation, getting error messages.Granted full access to myself and still unable to access due to insufficient access"
+                },
+                {
+                    "text": "Owner of the account is encountering error when accessing Watson Assistant"
+                },
+                {
+                    "text": "Unable to access Watson Assistant page. It is not loading"
+                },
+                {
+                    "text": "Whenever I try to create a new Watson Assistant service or access my previous instances I get an error. I attach screenshots for both scenarios"
+                },
+                {
+                    "text": "You do not have access to this instanceRequest access to this instance from the administrator, or select from one of your instances below."
+                }
+            ],
+            "description": "user has an error trying to access WA"
+        },
+        {
+            "intent": "support-already_created_ticket",
+            "examples": [
+                {
+                    "text": "and i tried creating a ticket"
+                },
+                {
+                    "text": "I already created a ticket"
+                },
+                {
+                    "text": "i'm also unable to post a support ticket, also getting an error message"
+                },
+                {
+                    "text": "I opened a ticket but this is not helping. So I'll describe to you what I did maybe you can help"
+                }
+            ],
+            "description": "User has already created a ticket"
+        },
+        {
+            "intent": "support-api_response_error",
+            "examples": [
+                {
+                    "text": "Bad Gateway when using cursor by logs export API"
+                },
+                {
+                    "text": "Bluemix Assets - 404 Not Found: Requested route ('watson-assistant."
+                },
+                {
+                    "text": "Bluemix Assets - api.js:52 POST API error 404 not Found"
+                },
+                {
+                    "text": "Bluemix Assets - Application request returns 404"
+                },
+                {
+                    "text": "Bluemix Assets - Error 500 in calls to Watson Conversation."
+                },
+                {
+                    "text": "Bluemix Assets - ERROR Code 404 Launching Watson Conversation"
+                },
+                {
+                    "text": "but when I use the /api/message i am getting Error: Resource not found"
+                },
+                {
+                    "text": "Connections are failing to Watson Assistant"
+                },
+                {
+                    "text": "Consistent 504 errors from the Conversation API"
+                },
+                {
+                    "text": "Delay in getting a response from Watson Assistant took 10 seconds"
+                },
+                {
+                    "text": "Error 500 - Internal Server Error"
+                },
+                {
+                    "text": "```{ \"error\": \"invalid request\", \"code\": 400}```"
+                },
+                {
+                    "text": "hello I have a problem with watson API... I'm using get intents endpoint and I'm having the error \"Rate limit exceeded\""
+                },
+                {
+                    "text": "Hello, we are having issues with watson API requests, we are using get intents endpoint (https://cloud.ibm.com/apidocs/assistant#list-intents) and I'm having the error \"Rate limit exceeded\" code:429"
+                },
+                {
+                    "text": "Hi guys, I'm getting the following error when using NLU analyze endpoint:``` error: \"cannot analyze: downstream issue\" code: 500```What could it be?"
+                },
+                {
+                    "text": "Hi,I'm getting an internal server error when using the following api:https://gateway.watsonplatform.net/conversation/api/v1/workspaces/{0}/message?version={1} (where {0} is the workspace id, and {1} is DateTime.Today).This wasn't happening roughly 1/2 weeks ago."
+                },
+                {
+                    "text": "\"HTTP 500 Internal Server ErrorContent-Type: application/jsonX-Error-Cause: Zuul Error: SHORTCIRCUIT\""
+                },
+                {
+                    "text": "http Errorcode 401 not specified in swagger file"
+                },
+                {
+                    "text": "http response error 500"
+                },
+                {
+                    "text": "Im getting an internal server error while launching Visual recognition service tool{\"code\":500,\"error\":\"Internal Server Error\",\"message\":\"While posting, service_key endpoint returned status code: 502\",\"reason\":\"Unknown error occurred\"}it happens always.Any help appreciated"
+                },
+                {
+                    "text": "Manage Credentials page displays 500: Internal server error"
+                },
+                {
+                    "text": "Now I’m getting 500's from the message endpoint with “Classification Error: Protocol error”"
+                },
+                {
+                    "text": "Test failed. Error: Dialog Service Error: Processing error"
+                },
+                {
+                    "text": "<@U0GTH89H6> Its not just the tooling `error: { [Error: [object Object]] code: 500, error: 'Conversation Service returned: undefined' } `"
+                },
+                {
+                    "text": "Undefined Server Error Occurred"
+                },
+                {
+                    "text": "Watson assistant is not responding"
+                },
+                {
+                    "text": "WatsonException: Error: Unsupported Media Type, Code: 415"
+                }
+            ],
+            "description": "user receives an error from calling the api"
+        },
+        {
+            "intent": "support-cant_create_case",
+            "examples": [
+                {
+                    "text": "Im afraid a have no the right permissions"
+                },
+                {
+                    "text": "looks like I do not have the permissions to create a case"
+                },
+                {
+                    "text": "Unfortunately I do not have the permissions right now to create a case. I will have to reach out to my account manager"
+                },
+                {
+                    "text": "You do not have the right permissions to open cases"
+                }
+            ],
+            "description": "User doesn't have permission to create a case"
+        },
+        {
+            "intent": "support-cant_import",
+            "examples": [
+                {
+                    "text": "after clicking on red colored Import button, it does not proceed further; so I don't get to see choose json file button."
+                },
+                {
+                    "text": "after I click in Button Import, nothig happens"
+                },
+                {
+                    "text": "and i am trying to import a skill in an existent skill, but import function is not working"
+                },
+                {
+                    "text": "but the import button isn't working"
+                },
+                {
+                    "text": "I am trying to use import function for a skill"
+                },
+                {
+                    "text": "I am unable to import skill"
+                },
+                {
+                    "text": "I can't import a new skill"
+                },
+                {
+                    "text": "I can't import a skill over an existint skill. The impot button does not work"
+                },
+                {
+                    "text": "I click the import button, but nothing happens"
+                },
+                {
+                    "text": "I need to up a version in Assistant e the button \"Import\" doesn`t work."
+                },
+                {
+                    "text": "I tried to do it earlier and it worked, but now, when I click the import button, nothing happens"
+                },
+                {
+                    "text": "mainly, I tried to import a new version to my skill"
+                },
+                {
+                    "text": "No Erros, but on clicking import button, nothing happens"
+                },
+                {
+                    "text": "the import button of the skill doesnt show window to select a file to import"
+                },
+                {
+                    "text": "The Import button of watson assistant is broken"
+                },
+                {
+                    "text": "Unable to import into an existing skil. The import button does not work"
+                },
+                {
+                    "text": "when click the import button, apperar un frame around the button"
+                },
+                {
+                    "text": "When I click \"Import\" it just hangs there doing nothing ?"
+                },
+                {
+                    "text": "When I select the button \"import\" nothing happens"
+                },
+                {
+                    "text": "yes now it is not working after I click on 'import' button in the pop dialog box"
+                }
+            ],
+            "description": "User can't import something into the tooling: skill, intents, etc."
+        },
+        {
+            "intent": "support-chat_disconnected",
+            "examples": [
+                {
+                    "text": "and the chat disconnected.."
+                },
+                {
+                    "text": "Hello, I was talking to Nayra I think, and the chat closed"
+                },
+                {
+                    "text": "Sorry My chat went away"
+                }
+            ],
+            "description": "user was chatting with a human before and wants to reconnect"
+        },
+        {
+            "intent": "support-general_error",
+            "examples": [
+                {
+                    "text": "and its not working :("
+                },
+                {
+                    "text": "Are the entities not visible now in the 'Try Out' pane?"
+                },
+                {
+                    "text": "Assistant doesn't respond to a condition of a dialog node when it should"
+                },
+                {
+                    "text": "but it is not working"
+                },
+                {
+                    "text": "but it is not working as expected"
+                },
+                {
+                    "text": "could you tell me how I can see the entities that you recognize using \"Try it out\"?"
+                },
+                {
+                    "text": "ErrorAssistants could not be loaded at this time. Internal Server Error. View 3 more errors."
+                },
+                {
+                    "text": "Error Integrations could not be loaded this time. Internal Server error"
+                },
+                {
+                    "text": "Error skills could not be loaded this time. Internal Server error"
+                },
+                {
+                    "text": "Got following error response from Watson Assistant at 2019-03-25T19:49:42. The issue seems to be intermittent because the same request returns successful response if we execute it now."
+                },
+                {
+                    "text": "Hello colleagues. I am renaming a node in the Dialog. But the object \"nodes_visited\" keeps with the same name. Is that a known bug?"
+                },
+                {
+                    "text": "Hello, I'm using Watson Assistant, and in the 'Try it out' panel I cannot see the entities that have been identified"
+                },
+                {
+                    "text": "Hi, I have a problem cloning skills"
+                },
+                {
+                    "text": "Hi! I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
+                },
+                {
+                    "text": "Hi there, I've been using Watson Assistant for one year, and today the entities identified do not appear in the 'Try it out' panel"
+                },
+                {
+                    "text": "hi there, I was encountering an issue right now about watson assistant (try it function)"
+                },
+                {
+                    "text": "Hi there, since some days im experiencing an issue with the conditions within a node . For some fields it says that the Intent/Entity has no examples altough that isnt true. Do you have an issue on your behalf?"
+                },
+                {
+                    "text": "How could I fiix this issue?"
+                },
+                {
+                    "text": "I am unable to see the triggered entities in the try it out pane."
+                },
+                {
+                    "text": "i created an node that expects the user to type his issue with a certain response, but if i send over 2045 characters in the same message the funcion that stores it doesnt work"
+                },
+                {
+                    "text": "if can't, have no problem"
+                },
+                {
+                    "text": "I get a dialog error saying \"ErrorUnable to create version. Error: an error occurred. \""
+                },
+                {
+                    "text": "I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
+                },
+                {
+                    "text": "I have some issues on Watson Assistant"
+                },
+                {
+                    "text": "I'm experiencing an issue with Watson assistant"
+                },
+                {
+                    "text": "i'm getting an error"
+                },
+                {
+                    "text": "I'm having a problem here"
+                },
+                {
+                    "text": "importing a corpus in .json format in Watson, the names of dialog nodes are blank"
+                },
+                {
+                    "text": "im trying recognize the entities in the 'try it' screen"
+                },
+                {
+                    "text": "im trying to access the logs created during user conversations with assistant"
+                },
+                {
+                    "text": "I need to delete this service, but it gives an error message when I try to delete it.The error message reads as follows:An error (10001) occurred while deleting the service."
+                },
+                {
+                    "text": "in Try it out, it recognize intent only but entities"
+                },
+                {
+                    "text": "is there any issue ?"
+                },
+                {
+                    "text": "it doesn't work when they use it"
+                },
+                {
+                    "text": "It's ok, I'm trying different syntaxs but I still get errors"
+                },
+                {
+                    "text": "It worked earlier, but it's not woerking now"
+                },
+                {
+                    "text": "missing artifact error when configuring Maven with Assistant"
+                },
+                {
+                    "text": "So it seems to be an internal error"
+                },
+                {
+                    "text": "so that's not going to be helpful :)"
+                },
+                {
+                    "text": "the problem is there"
+                },
+                {
+                    "text": "There are a bug in Watson Assistant"
+                },
+                {
+                    "text": "try it on watson assistant detects what dialog node it should go and says what entities are detected however, right now it doesn't"
+                }
+            ],
+            "description": "generic error message from which other branches should be added (training_error, loading_error, system_error, etc.)"
+        },
+        {
+            "intent": "support-open_a_case",
+            "examples": [
+                {
+                    "text": "can u please raise the ticket ?"
+                },
+                {
+                    "text": "Can you help how do I can open a Case?"
+                },
+                {
+                    "text": "how do i open a case"
+                },
+                {
+                    "text": "how to open the case"
+                },
+                {
+                    "text": "please give me the link to raise the ticket"
+                }
+            ],
+            "description": "User wants to open a case or learn how to open one"
+        },
+        {
+            "intent": "support-speak_other_language",
+            "examples": [
+                {
+                    "text": "Brazilian words are not intepreted correctly"
+                },
+                {
+                    "text": "Can I speak in portuguese?"
+                },
+                {
+                    "text": "Do you speak portuguese ?"
+                },
+                {
+                    "text": "has someone whoose speak portuguese in there?"
+                },
+                {
+                    "text": "I'm from Brazil and I don't speak English very well"
+                },
+                {
+                    "text": "Speak in Portuguese?"
+                },
+                {
+                    "text": "you speak portuguese?"
+                }
+            ],
+            "description": "User wants to know if watson or human can speak another language"
+        },
+        {
+            "intent": "support-training_error",
+            "examples": [
+                {
+                    "text": "Error - An error occurred while training watson"
+                },
+                {
+                    "text": "Error, An error occurred while training watson"
+                },
+                {
+                    "text": "Hi, sirs, I am doing a chatbot and the \"Try it\" screen shows \"Watson is training\" for the last ten minutes so I cant test. Any bug?"
+                }
+            ],
+            "description": "user encountered a training error when retraining the classifier"
+        },
+        {
+            "intent": "support-upgrade_error",
+            "examples": [
+                {
+                    "text": "Change pricing planCould not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
+                },
+                {
+                    "text": "Could not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
+                },
+                {
+                    "text": "Have tried upgrading within the assistant, but currently receive an error message."
+                },
+                {
+                    "text": "I followed those steps, but got an error when submitting the upgrade."
+                },
+                {
+                    "text": "i went to user upgrade plan and i recieve: 500: Internal server errorThis page can’t be displayed because of an error on the IBM Cloud server. Try again later, or check the IBM Cloud status page for info."
+                },
+                {
+                    "text": "thats the error when I try to update the lite instance to std licence"
+                },
+                {
+                    "text": "yes. have tried to upgrade from standard to plus and received the following error: Could not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
+                }
+            ],
+            "description": "user is seeing an error when trying to upgrade their instance"
+        }
+    ],
+    "entities": [
+        {
+            "entity": "confirm",
+            "values": [
+                {
+                    "type": "synonyms",
+                    "value": "no",
+                    "synonyms": [
+                        "nah",
+                        "ney",
+                        "nope"
+                    ]
+                },
+                {
+                    "type": "synonyms",
+                    "value": "yes",
+                    "synonyms": [
+                        "ya",
+                        "yeah",
+                        "yep"
+                    ]
+                }
+            ],
+            "fuzzy_match": true
+        },
+        {
+            "entity": "idiots",
+            "values": [
+                {
+                    "type": "synonyms",
+                    "value": "Chris",
+                    "synonyms": []
+                }
+            ],
+            "fuzzy_match": true
+        }
+    ],
+    "language": "en",
+    "metadata": {
+        "api_version": {
+            "major_version": "v1",
+            "minor_version": "2019-02-28"
+        }
     },
-    "disambiguation": {
-      "prompt": "Did you mean:",
-      "enabled": true,
-      "sensitivity": "auto",
-      "none_of_the_above_prompt": "None of the above"
+    "description": "",
+    "dialog_nodes": [
+        {
+            "type": "standard",
+            "title": "Anything else",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Sorry, I don't know how to handle that. "
+                            },
+                            {
+                                "text": "Mitch is the reason why I don't know the answer"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "metadata": {},
+            "conditions": "anything_else",
+            "dialog_node": "Anything else",
+            "previous_sibling": "node_1_1559762476065"
+        },
+        {
+            "type": "standard",
+            "title": "Watson Assistant General question",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Here's a link to our <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-tool-overview\" target=\"_blank\">Product Overview.</a> In it you will learn about the basic features available in Watson Assistant. <br><br>"
+                            },
+                            {
+                                "text": ""
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "values": [
+                            {
+                                "text": "If there is a feature you'd like to see in Watson Assistant that isn't available, we'd love to hear from you.  Check out this link to let us know:  <a href=\"https://ibm-data-and-ai.ideas.aha.io/\" target=\"_blank\">IBM Data and AI aha Ideas</a>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-general",
+            "user_label": "Feature support in Watson Assistant",
+            "dialog_node": "node_10_1558619836484",
+            "previous_sibling": "node_9_1558619808425"
+        },
+        {
+            "type": "standard",
+            "title": "Adding Dialog Nodes",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Adding Dialog Nodes is performed from the Dialog tab within a skill.<br><br>Information about how to add, move, and populate Dialog Nodes on this page is documented at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-dialog-overview\" target=\"_blank\">Dialog Overview.</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-general_dialog",
+            "user_label": "Dialog Nodes Overview Documentation",
+            "dialog_node": "node_11_1558619903040",
+            "previous_sibling": "node_10_1558619836484"
+        },
+        {
+            "type": "standard",
+            "title": "Joke node",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "How much does a hipster weigh? <br> An Instagram!"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_2_1556910615078",
+            "metadata": {},
+            "conditions": "#chit-chat-tell_joke",
+            "user_label": "Tell a joke",
+            "dialog_node": "node_1_1555687266556",
+            "previous_sibling": "node_1_1556909926235"
+        },
+        {
+            "type": "standard",
+            "title": "Thank you",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "No problem I guess"
+                            },
+                            {
+                                "text": "Yeah whatever"
+                            },
+                            {
+                                "text": "Sure thing"
+                            },
+                            {
+                                "text": "Of course, I exist for this."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_2_1556910615078",
+            "metadata": {},
+            "conditions": "#chit-chat-thanks",
+            "dialog_node": "node_1_1556909926235"
+        },
+        {
+            "type": "standard",
+            "title": "Confirmation of presence",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Yes, I'm here silly human"
+                            },
+                            {
+                                "text": "I serve at your pleasure"
+                            },
+                            {
+                                "text": "At your service"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_2_1556910615078",
+            "metadata": {},
+            "conditions": "#chit-chat-still_there",
+            "user_label": "",
+            "dialog_node": "node_1_1558380282431",
+            "previous_sibling": "node_1_1555687266556"
+        },
+        {
+            "type": "standard",
+            "title": "Greetings",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "hello there."
+                            },
+                            {
+                                "text": "Hi!"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_2_1556910615078",
+            "metadata": {},
+            "conditions": "#chit-chat-greetings",
+            "dialog_node": "node_1_1558380433202",
+            "previous_sibling": "node_3_1558380303005"
+        },
+        {
+            "type": "folder",
+            "title": "feature support",
+            "metadata": {},
+            "dialog_node": "node_1_1558464636050",
+            "previous_sibling": "node_3_1556910647635"
+        },
+        {
+            "type": "standard",
+            "title": "Already created a ticket",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Ok, I understand that you already tried creating a ticket. Would you like me to put you in touch with a human to try to resolve the issue instead?"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "title": "",
+                        "options": [
+                            {
+                                "label": "Yes",
+                                "value": {
+                                    "input": {
+                                        "text": "yes"
+                                    }
+                                }
+                            },
+                            {
+                                "label": "No",
+                                "value": {
+                                    "input": {
+                                        "text": "no"
+                                    }
+                                }
+                            }
+                        ],
+                        "response_type": "option"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-already_created_ticket",
+            "user_label": "Already created a ticket",
+            "dialog_node": "node_1_1559070951813",
+            "previous_sibling": "node_8_1555687218729"
+        },
+        {
+            "type": "standard",
+            "title": "Upgrade error",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Have you tried following the instructions here: <upgrade link>"
+                            },
+                            {
+                                "text": "If that still doesn't work, I can get a human to help you."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-upgrade_error",
+            "user_label": "Upgrade error",
+            "dialog_node": "node_1_1559073945737",
+            "previous_sibling": "node_9_1559073026242"
+        },
+        {
+            "type": "standard",
+            "title": "Fallback Node",
+            "output": {
+                "generic": [
+                    {
+                        "query": "",
+                        "filter": "",
+                        "query_type": "natural_language",
+                        "response_type": "search_skill"
+                    }
+                ]
+            },
+            "metadata": {},
+            "next_step": {
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": "node_1_1562624562402"
+            },
+            "conditions": "false",
+            "dialog_node": "node_1_1559762476065",
+            "previous_sibling": "node_22_1558620386190"
+        },
+        {
+            "type": "standard",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "If none of these articles help, you can open a <a href=\"https://cloud.ibm.com/unifiedsupport/cases/add\" target=\"_blank\">Support Case</a> to get in touch with a human."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1559762476065",
+            "metadata": {},
+            "conditions": "true",
+            "dialog_node": "node_1_1562624562402"
+        },
+        {
+            "type": "standard",
+            "title": "Using Entities",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Entities are the 'nouns' that inform Intents.  <br><br>You can learn more about adding them to your Assistant at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-entities\" target=\"_blank\">Creating Entities.</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-general_entity",
+            "user_label": "Using Entities with Intents",
+            "dialog_node": "node_12_1558619942385",
+            "previous_sibling": "node_11_1558619903040"
+        },
+        {
+            "type": "standard",
+            "title": "Making Callouts",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "You can extend the functionality of your Assistant by creating webhook callouts to your dialog nodes.  <br><br>This Beta feature is described in detail at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-dialog-webhooks\" target=\"_blank\">Adding a webhook callout to a dialog node</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-how_to_make_callout",
+            "user_label": "Making Callouts",
+            "dialog_node": "node_13_1558619979389",
+            "previous_sibling": "node_12_1558619942385"
+        },
+        {
+            "type": "standard",
+            "title": "Importing Skills",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "To add an existing skill to your Assistant, you can import it as a JSON file.<br><br>See here for details on how to do this:  <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-skill-dialog-add#skill-dialog-add-task\" target=\"_blank\">Creating a Dialog Skill</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-import",
+            "user_label": "Importing Dialog Skills",
+            "dialog_node": "node_14_1558620039771",
+            "previous_sibling": "node_13_1558619979389"
+        },
+        {
+            "type": "standard",
+            "title": "Available Integrations",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "You can check out available integrations at this link: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-deploy-integration-add\" target=\"_blank\">Adding Integrations</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-integrations",
+            "user_label": "Available Integrations",
+            "dialog_node": "node_15_1558620082622",
+            "previous_sibling": "node_14_1558620039771"
+        },
+        {
+            "type": "standard",
+            "title": "Speech Integration",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Currently, speech integration is not a built in function of Watson Assistant.<br><br>However, Here's a tutorial on how to leverage Watson Speech to Text and Text to Speech to Enhance your Watson Assistant with Speech capabilities: <a href=\"https://developer.ibm.com/patterns/create-a-web-based-voice-chatbot/\" target=\"_blank\">Voicebot Code Pattern from IBM Developer</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-integrations_speech",
+            "user_label": "Integrating Speech with your Assistant",
+            "dialog_node": "node_16_1558620108380",
+            "previous_sibling": "node_15_1558620082622"
+        },
+        {
+            "type": "standard",
+            "title": "Log Data Information",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "You can use log data information to improve your Assistant based on data collected from every conversation it has.  <br><br>With PREMIUM instances, these logfiles can be shared across instances.  <br><br>This documentation link has the details: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-logs#logs-pick-data-source\" target=\"_blank\">Improving your Skills using built in Analytics</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-log_data_outside_skill",
+            "user_label": "Using Log Data to improve your Assistant's Skills",
+            "dialog_node": "node_17_1558620139539",
+            "previous_sibling": "node_16_1558620108380"
+        },
+        {
+            "type": "standard",
+            "title": "How many Skills are permitted",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "The number of skills you can create depends on your Watson Assistant plan type. <br><br> This link has the details: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-skill-add#skill-add-limits\" target=\"_blank\">Skill Limits by plan type</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-multi_skill",
+            "user_label": "Skill Limits",
+            "dialog_node": "node_18_1558620189852",
+            "previous_sibling": "node_17_1558620139539"
+        },
+        {
+            "type": "standard",
+            "title": "Beta Program Request",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Follow this link to find out how to join our Beta program:  <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-feedback#feedback-beta\" target=\"_blank\">Participate in the beta program</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-request_beta",
+            "user_label": "Request to be in Beta Program",
+            "dialog_node": "node_19_1558620242728",
+            "previous_sibling": "node_18_1558620189852"
+        },
+        {
+            "type": "folder",
+            "title": "chit chat",
+            "metadata": {},
+            "dialog_node": "node_2_1556910615078",
+            "previous_sibling": "Welcome"
+        },
+        {
+            "type": "standard",
+            "title": "API response error",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "HTTP response codes in the 2xx range indicate success. A response in the 4xx range is some sort of failure, and a response in the 5xx range usually indicates an internal system error that cannot be resolved by the user"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "values": [
+                            {
+                                "text": "If you have a further question about an API response error, you can get in touch with a human below."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "response_type": "connect_to_agent"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-api_response_error",
+            "user_label": "API response error",
+            "dialog_node": "node_2_1559071542141",
+            "previous_sibling": "node_1_1559070951813"
+        },
+        {
+            "type": "folder",
+            "title": "non-functional",
+            "metadata": {},
+            "dialog_node": "node_22_1558620386190",
+            "previous_sibling": "node_4_1556910658431"
+        },
+        {
+            "type": "standard",
+            "title": "Cloud Foundry to IAM/Resource Group Migration",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Here how to migrate from Cloud Foundry to Resource Groups: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=watson-migrate\" target=\"_blank\">Migrating from Cloud Foundry</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_22_1558620386190",
+            "metadata": {},
+            "conditions": "#non-functional-cf_to_rc_migration",
+            "user_label": "Migration from Cloud Foundry to Resource Groups",
+            "dialog_node": "node_23_1558620408115"
+        },
+        {
+            "type": "standard",
+            "title": "Assistant Security",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": " "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_22_1558620386190",
+            "metadata": {},
+            "next_step": {
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": "node_9_1558619808425"
+            },
+            "conditions": "#non-functional-is_watson_secure",
+            "user_label": "Assistant Data Security",
+            "dialog_node": "node_24_1558620455812",
+            "previous_sibling": "node_23_1558620408115"
+        },
+        {
+            "type": "standard",
+            "title": "Pricing Plan Link",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "The various plans available to you are in our Catalog here: <a href=\"https://cloud.ibm.com/catalog/services/watson-assistant\" target=\"_blank\">Watson Assistant Catalog Listing</a> "
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_4_1556910658431",
+            "metadata": {},
+            "conditions": "#sales-pricing_question",
+            "user_label": "Pricing Plans",
+            "dialog_node": "node_25_1558620513585"
+        },
+        {
+            "type": "folder",
+            "title": "technical support",
+            "metadata": {},
+            "dialog_node": "node_3_1556910647635",
+            "previous_sibling": "node_2_1556910615078"
+        },
+        {
+            "type": "standard",
+            "title": "Test message",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Ok, no worries!"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_2_1556910615078",
+            "metadata": {},
+            "conditions": "#chit-chat-test_message",
+            "dialog_node": "node_3_1558380303005",
+            "previous_sibling": "node_1_1558380282431"
+        },
+        {
+            "type": "standard",
+            "title": "Access WA logs",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Access the logs via Improve tab or API"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "values": [
+                            {
+                                "text": "If you want to learn more, read it here: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-logs-resources\" target=\"_blank\">Assistant Logs Documentation</a>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-access_logs",
+            "user_label": "Access Watson Assistant logs",
+            "dialog_node": "node_3_1558619527835"
+        },
+        {
+            "type": "standard",
+            "title": "Can't create a support ticket",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "I'm sorry you're having trouble creating a case. Let me put you in touch with someone who can help."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-cant_create_case",
+            "user_label": "Can't create a support ticket",
+            "dialog_node": "node_3_1559071651731",
+            "previous_sibling": "node_2_1559071542141"
+        },
+        {
+            "type": "folder",
+            "title": "sales",
+            "metadata": {},
+            "dialog_node": "node_4_1556910658431",
+            "previous_sibling": "node_1_1558464636050"
+        },
+        {
+            "type": "standard",
+            "title": "Using the WA API",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "It seems like you want information on using our APIs.  This is a link to our documentation that might help:  <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-api-overview\" target=\"_blank\">Watson Assistant API Overview</a>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-api",
+            "user_label": "WA API Documentation",
+            "dialog_node": "node_4_1558619584544",
+            "previous_sibling": "node_3_1558619527835"
+        },
+        {
+            "type": "standard",
+            "title": "Can't import",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "I'm sorry you're having trouble with importing. Let me see if a human can help you."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-cant_import",
+            "user_label": "Can't import",
+            "dialog_node": "node_4_1559071695347",
+            "previous_sibling": "node_3_1559071651731"
+        },
+        {
+            "type": "standard",
+            "title": "User wants to know how Watson Learns",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Watson Assistant uses advanced Natural Language Processing (NLP) and Machine Learning Techniques under the covers that are too complicated to explain here. <br><br>Here is a link to the <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-index#index-how-it-works\" target=\"_blank\">Watson Assistant Overview</a> that will help you to understand the overall process you will follow to create your chatbot virtually without any code!"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-auto_learn",
+            "user_label": "How does Watson Learn",
+            "dialog_node": "node_5_1558619621038",
+            "previous_sibling": "node_4_1558619584544"
+        },
+        {
+            "type": "standard",
+            "title": "Chat disconnected",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Ok, I understand that your prior chat was disconnected. A human should be able to help you out here."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-chat_disconnected",
+            "user_label": "Chat disconnected",
+            "dialog_node": "node_5_1559071760172",
+            "previous_sibling": "node_4_1559071695347"
+        },
+        {
+            "type": "standard",
+            "title": "Context Variable Feature Support",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Context, and the \"context variables\" it contains persist throughout a conversation.  <br><br>Learn more about what they are and how to implement them at this link <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-api-client-get-context\" target=\"_blank\">Accessing Context Data</a>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-context_variables",
+            "user_label": "Documentation on Context Variables",
+            "dialog_node": "node_6_1558619676218",
+            "previous_sibling": "node_5_1558619621038"
+        },
+        {
+            "type": "standard",
+            "title": "General Error",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "I'm sorry this isn't working for you, let me put you in touch with a human to help."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-general_error",
+            "user_label": "Error with Watson Assistant",
+            "dialog_node": "node_6_1559071927207",
+            "previous_sibling": "node_5_1559071760172"
+        },
+        {
+            "type": "standard",
+            "title": "Deploying Watson",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Deploying (or Integrating) your Assistant isn't complicated.  There are even built-in integrations for popular channels like Facebook Messenger, Slack, and others.  <br><br>See more at this link in our Documentation: <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-deploy-integration-add#deploy-integration-add-task\" target=\"_blank\">Integrating/Deploying your Assistant</a>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-deploying_watson",
+            "user_label": "Documentation on getting started with Deploying/Integrations",
+            "dialog_node": "node_7_1558619717015",
+            "previous_sibling": "node_6_1558619676218"
+        },
+        {
+            "type": "standard",
+            "title": "Open a support ticket",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "I can't help open a ticket for you yet, so I'll need to connect you with a human to help."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-open_a_case",
+            "user_label": "Open a support ticket",
+            "dialog_node": "node_7_1559072238807",
+            "previous_sibling": "node_6_1559071927207"
+        },
+        {
+            "type": "standard",
+            "title": "Access error",
+            "output": {
+                "generic": []
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "next_step": {
+                "behavior": "jump_to",
+                "selector": "body",
+                "dialog_node": "node_1_1559762476065"
+            },
+            "conditions": "#support-access_error",
+            "user_label": "Can't access the tool",
+            "dialog_node": "node_8_1555687218729"
+        },
+        {
+            "type": "standard",
+            "title": "Find Node, Workspace, Skill, Assistant IDs",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "To see the Assistant ID, navigate to the Assistants Tab, then Options (three vertical dots on right of each Assistant Instance), then choose Settings, then API Details.<br>br>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "values": [
+                            {
+                                "text": "To see the Skill or Workspace ID, navigate to the Skills Tab, then Options (three vertical dots on top right of each Skill Instance), then choose View API Details<br><br>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "values": [
+                            {
+                                "text": "To see Node ID, open the exported JSON for a skill and search for the ID referred to in the error message and refer to the \"user_label\" corresponding to the Node ID to identify the node requiring attention."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-find_id",
+            "user_label": "How to find the Node, Workspace, Skill, Assistant corresponding to an ID",
+            "dialog_node": "node_8_1558619778410",
+            "previous_sibling": "node_7_1558619717015"
+        },
+        {
+            "type": "standard",
+            "title": "Speak another language",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Sorry, I only understand English but let me find a human that can help you out!"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-speak_other_language",
+            "user_label": "Speak another language",
+            "dialog_node": "node_8_1559072665916",
+            "previous_sibling": "node_7_1559072238807"
+        },
+        {
+            "type": "standard",
+            "title": "Information Security (GPDR etc.)",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "If you are interested in learning more about Watson Assistant's Information Security please see this link <a href=\"https://cloud.ibm.com/docs/services/assistant?topic=assistant-information-security\" target=\"_blank\">Watson Assistant Information Security</a>"
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_1_1558464636050",
+            "metadata": {},
+            "conditions": "#feature-support-gdpr",
+            "user_label": "Documentation on Watson Assistant Information Security",
+            "dialog_node": "node_9_1558619808425",
+            "previous_sibling": "node_8_1558619778410"
+        },
+        {
+            "type": "standard",
+            "title": "Training error",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Arg, training errors are the worst! I'm going to escalate this to try to see what's going on."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    }
+                ]
+            },
+            "parent": "node_3_1556910647635",
+            "metadata": {},
+            "conditions": "#support-training_error",
+            "user_label": "Training error",
+            "dialog_node": "node_9_1559073026242",
+            "previous_sibling": "node_8_1559072665916"
+        },
+        {
+            "type": "standard",
+            "title": "Welcome",
+            "output": {
+                "generic": [
+                    {
+                        "values": [
+                            {
+                                "text": "Hi there! <br> <br> I can help answer questions you may have about Watson Assistant. <br> <br> Quickly start with one of our options below or type your question in."
+                            }
+                        ],
+                        "response_type": "text",
+                        "selection_policy": "sequential"
+                    },
+                    {
+                        "title": "",
+                        "options": [
+                            {
+                                "label": "Request beta access",
+                                "value": {
+                                    "input": {
+                                        "text": "Request beta access"
+                                    }
+                                }
+                            },
+                            {
+                                "label": "Accessing WA chat logs",
+                                "value": {
+                                    "input": {
+                                        "text": "export usage data"
+                                    }
+                                }
+                            },
+                            {
+                                "label": "Make me laugh",
+                                "value": {
+                                    "input": {
+                                        "text": "tell me a joke"
+                                    }
+                                }
+                            }
+                        ],
+                        "response_type": "option"
+                    }
+                ]
+            },
+            "metadata": {},
+            "conditions": "welcome",
+            "dialog_node": "Welcome"
+        }
+    ],
+    "workspace_id": "10e19a04-a13f-4534-a823-3d92ff837bfe",
+    "counterexamples": [],
+    "system_settings": {
+        "tooling": {
+            "store_generic_responses": true
+        },
+        "disambiguation": {
+            "prompt": "Did you mean:",
+            "enabled": true,
+            "sensitivity": "auto",
+            "none_of_the_above_prompt": "None of the above"
+        },
+        "human_agent_assist": {},
+        "spelling_auto_correct": true
     },
-    "human_agent_assist": {},
-    "spelling_auto_correct": true
-  },
-  "learning_opt_out": false,
-  "status": "Available"
+    "learning_opt_out": false,
+    "status": "Available"
 }

@@ -12,6 +12,9 @@
                 },
                 {
                     "text": "hi there"
+                },
+                {
+                    "text": "howdy pardner"
                 }
             ],
             "description": "user greets the bot"
@@ -1003,6 +1006,11 @@
                     "type": "synonyms",
                     "value": "Chris",
                     "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "Dan",
+                    "synonyms": []
                 }
             ],
             "fuzzy_match": true
@@ -1180,31 +1188,6 @@
             "user_label": "",
             "dialog_node": "node_1_1558380282431",
             "previous_sibling": "node_1_1555687266556"
-        },
-        {
-            "type": "standard",
-            "title": "Greetings",
-            "output": {
-                "generic": [
-                    {
-                        "values": [
-                            {
-                                "text": "hello there."
-                            },
-                            {
-                                "text": "Hi!"
-                            }
-                        ],
-                        "response_type": "text",
-                        "selection_policy": "sequential"
-                    }
-                ]
-            },
-            "parent": "node_2_1556910615078",
-            "metadata": {},
-            "conditions": "#chit-chat-greetings",
-            "dialog_node": "node_1_1558380433202",
-            "previous_sibling": "node_3_1558380303005"
         },
         {
             "type": "folder",

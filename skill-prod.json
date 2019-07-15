@@ -5,13 +5,13 @@
       "intent": "support-access_error",
       "examples": [
         {
+          "text": "Multiple users unable to access watson conversation, getting error messages.Granted full access to myself and still unable to access due to insufficient access"
+        },
+        {
+          "text": "issue I'd like to give access to our bot to remy.solutions and pierre.solutions"
+        },
+        {
           "text": "it ask me to login and my internal login is not helping"
-        },
-        {
-          "text": "After my log in with IBM ID, the watson assistant, occurs an error \"You are no longer logged in. Re-directing you to the login page.\""
-        },
-        {
-          "text": "Getting failed to access token when accessting the Asstant tooling"
         },
         {
           "text": "cloud.ibm.com permission look identical on user but they have different level of access resources in resource group"
@@ -29,28 +29,28 @@
           "text": "I get an error: Unauthorized access is denied to invalid credentials"
         },
         {
-          "text": "You do not have access to this instanceRequest access to this instance from the administrator, or select from one of your instances below."
-        },
-        {
-          "text": "Whenever I try to create a new Watson Assistant service or access my previous instances I get an error. I attach screenshots for both scenarios"
-        },
-        {
-          "text": "and it gives me watson_developer_cloud.watson_service.WatsonApiException: Error: Unauthorized: Access is denied due to invalid credentials"
+          "text": "I can not create a new Watson Assistant instance. I get next error:The 'CTT_watson' service wasn't created because of network error."
         },
         {
           "text": "in my workspace from watson assistant appears this message .Error while retrieving messages. Error: Analytics Error: Protocol error."
         },
         {
-          "text": "I can not create a new Watson Assistant instance. I get next error:The 'CTT_watson' service wasn't created because of network error."
+          "text": "and it gives me watson_developer_cloud.watson_service.WatsonApiException: Error: Unauthorized: Access is denied due to invalid credentials"
+        },
+        {
+          "text": "Whenever I try to create a new Watson Assistant service or access my previous instances I get an error. I attach screenshots for both scenarios"
+        },
+        {
+          "text": "You do not have access to this instanceRequest access to this instance from the administrator, or select from one of your instances below."
+        },
+        {
+          "text": "After my log in with IBM ID, the watson assistant, occurs an error \"You are no longer logged in. Re-directing you to the login page.\""
         },
         {
           "text": "An access error has occurred to Watson Assistant (formerly Conversation) from our system.http error 503"
         },
         {
-          "text": "Multiple users unable to access watson conversation, getting error messages.Granted full access to myself and still unable to access due to insufficient access"
-        },
-        {
-          "text": "issue I'd like to give access to our bot to remy.solutions and pierre.solutions"
+          "text": "Getting failed to access token when accessting the Asstant tooling"
         }
       ],
       "description": "user has an error trying to access WA"
@@ -62,10 +62,10 @@
           "text": "What features are available?"
         },
         {
-          "text": "Great, thanks. So currently there is no way to tell who modified an Intent, Entity or Dialog, right?"
+          "text": "What can WA do for me?"
         },
         {
-          "text": "What can WA do for me?"
+          "text": "Great, thanks. So currently there is no way to tell who modified an Intent, Entity or Dialog, right?"
         }
       ],
       "description": "user has a general question about a feature"
@@ -74,19 +74,19 @@
       "intent": "feature-support-context_variables",
       "examples": [
         {
-          "text": "can I store a dictionary in a context variable?"
+          "text": "Hello, I'm using Watson Assistant service. I'm trying to compare the -number entity with a numeric value that I have saved in a $context variable. How can I find the correct syntax to do this? I have tried several ways but I get different errors"
         },
         {
           "text": "When I print the entity or try to save the value in a $context variable, it doesn't save the first 0"
+        },
+        {
+          "text": "can I store a dictionary in a context variable?"
         },
         {
           "text": "Does the input.text configuration on the context fields have a limit?(<? input.text ?>)On our chatsite, the maximum character limit we've observed so far is 1946 on a single message."
         },
         {
           "text": "Is there a way to pass a context variable to cloud function?"
-        },
-        {
-          "text": "Hello, I'm using Watson Assistant service. I'm trying to compare the -number entity with a numeric value that I have saved in a $context variable. How can I find the correct syntax to do this? I have tried several ways but I get different errors"
         }
       ],
       "description": "general intent about context variables"
@@ -95,6 +95,9 @@
       "intent": "feature-support-general_entity",
       "examples": [
         {
+          "text": "Can I include entities in intent example?"
+        },
+        {
           "text": "How about this entity?"
         },
         {
@@ -102,9 +105,6 @@
         },
         {
           "text": "I want to know the exact format for including entities in intents."
-        },
-        {
-          "text": "Can I include entities in intent example?"
         },
         {
           "text": "What is an entity?"
@@ -116,7 +116,13 @@
       "intent": "feature-support-request_beta",
       "examples": [
         {
+          "text": "request beta access"
+        },
+        {
           "text": "If you create an AI Watson Assistant service, then you launch the tool and select Skills (was Watson Conversation Workspace...), there was a button to request access to the Beta version."
+        },
+        {
+          "text": "need beta access to WA"
         },
         {
           "text": "I need beta access for this tool"
@@ -131,13 +137,7 @@
           "text": "and the other one is getting beta access to the WA"
         },
         {
-          "text": "request beta access"
-        },
-        {
           "text": "Hello I am an IBMer and I'd like to try search skills of Watson Assistant bur I don't see any link to \"request beta\" access"
-        },
-        {
-          "text": "need beta access to WA"
         }
       ],
       "description": "User wants to get into the Closed Beta program and can't find it or is having an error"
@@ -155,12 +155,6 @@
       "intent": "support-upgrade_error",
       "examples": [
         {
-          "text": "yes. have tried to upgrade from standard to plus and received the following error: Could not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
-        },
-        {
-          "text": "Change pricing planCould not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
-        },
-        {
           "text": "i went to user upgrade plan and i recieve: 500: Internal server errorThis page can’t be displayed because of an error on the IBM Cloud server. Try again later, or check the IBM Cloud status page for info."
         },
         {
@@ -174,6 +168,12 @@
         },
         {
           "text": "thats the error when I try to update the lite instance to std licence"
+        },
+        {
+          "text": "Change pricing planCould not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
+        },
+        {
+          "text": "yes. have tried to upgrade from standard to plus and received the following error: Could not find VCAP::CloudController::ServicePlan with guid: f0a3dd47-b693-4d73-a8df-aa6baf07a933"
         }
       ],
       "description": "user is seeing an error when trying to upgrade their instance"
@@ -182,7 +182,7 @@
       "intent": "feature-support-deploying_watson",
       "examples": [
         {
-          "text": "i used watson assistance to develop a simple chat bot.. i was just learning i need to test it in my website"
+          "text": "I want to deploy watson bot on my blogspot site"
         },
         {
           "text": "Hi can you please help deploying chat bot in my website"
@@ -194,7 +194,7 @@
           "text": "I have a question about integrate my watson assistant to my web site"
         },
         {
-          "text": "I want to deploy watson bot on my blogspot site"
+          "text": "i used watson assistance to develop a simple chat bot.. i was just learning i need to test it in my website"
         }
       ],
       "description": "user wants to know how to deploy watson to a channel"
@@ -203,16 +203,16 @@
       "intent": "support-cant_create_case",
       "examples": [
         {
-          "text": "You do not have the right permissions to open cases"
-        },
-        {
-          "text": "Unfortunately I do not have the permissions right now to create a case. I will have to reach out to my account manager"
-        },
-        {
           "text": "Im afraid a have no the right permissions"
         },
         {
           "text": "looks like I do not have the permissions to create a case"
+        },
+        {
+          "text": "You do not have the right permissions to open cases"
+        },
+        {
+          "text": "Unfortunately I do not have the permissions right now to create a case. I will have to reach out to my account manager"
         }
       ],
       "description": "User doesn't have permission to create a case"
@@ -221,25 +221,40 @@
       "intent": "support-general_error",
       "examples": [
         {
-          "text": "I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
-        },
-        {
-          "text": "Hi! I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
+          "text": "im trying to access the logs created during user conversations with assistant"
         },
         {
           "text": "Assistant doesn't respond to a condition of a dialog node when it should"
         },
         {
-          "text": "im trying to access the logs created during user conversations with assistant"
+          "text": "Hi! I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
         },
         {
-          "text": "i'm getting an error"
+          "text": "I have a problem cloning skills, the error is: ErrorWe could not duplicate your Skill. Invalid Request Body."
         },
         {
-          "text": "So it seems to be an internal error"
+          "text": "Hi, I have a problem cloning skills"
         },
         {
-          "text": "It's ok, I'm trying different syntaxs but I still get errors"
+          "text": "and its not working :("
+        },
+        {
+          "text": "is there any issue ?"
+        },
+        {
+          "text": "the problem is there"
+        },
+        {
+          "text": "Got following error response from Watson Assistant at 2019-03-25T19:49:42. The issue seems to be intermittent because the same request returns successful response if we execute it now."
+        },
+        {
+          "text": "hi there, I was encountering an issue right now about watson assistant (try it function)"
+        },
+        {
+          "text": "Hello, I'm using Watson Assistant, and in the 'Try it out' panel I cannot see the entities that have been identified"
+        },
+        {
+          "text": "im trying recognize the entities in the 'try it' screen"
         },
         {
           "text": "Error skills could not be loaded this time. Internal Server error"
@@ -323,28 +338,13 @@
           "text": "Hi there, I've been using Watson Assistant for one year, and today the entities identified do not appear in the 'Try it out' panel"
         },
         {
-          "text": "im trying recognize the entities in the 'try it' screen"
+          "text": "It's ok, I'm trying different syntaxs but I still get errors"
         },
         {
-          "text": "Hello, I'm using Watson Assistant, and in the 'Try it out' panel I cannot see the entities that have been identified"
+          "text": "So it seems to be an internal error"
         },
         {
-          "text": "hi there, I was encountering an issue right now about watson assistant (try it function)"
-        },
-        {
-          "text": "Got following error response from Watson Assistant at 2019-03-25T19:49:42. The issue seems to be intermittent because the same request returns successful response if we execute it now."
-        },
-        {
-          "text": "the problem is there"
-        },
-        {
-          "text": "is there any issue ?"
-        },
-        {
-          "text": "and its not working :("
-        },
-        {
-          "text": "Hi, I have a problem cloning skills"
+          "text": "i'm getting an error"
         }
       ],
       "description": "generic error message from which other branches should be added (training_error, loading_error, system_error, etc.)"
@@ -353,16 +353,13 @@
       "intent": "support-cant_import",
       "examples": [
         {
-          "text": "I am trying to use import function for a skill"
+          "text": "and i am trying to import a skill in an existent skill, but import function is not working"
         },
         {
           "text": "mainly, I tried to import a new version to my skill"
         },
         {
           "text": "I can't import a skill over an existint skill. The impot button does not work"
-        },
-        {
-          "text": "and i am trying to import a skill in an existent skill, but import function is not working"
         },
         {
           "text": "When I click \"Import\" it just hangs there doing nothing ?"
@@ -410,6 +407,9 @@
           "text": "I am unable to import skill"
         },
         {
+          "text": "I am trying to use import function for a skill"
+        },
+        {
           "text": "Unable to import into an existing skil. The import button does not work"
         }
       ],
@@ -428,22 +428,22 @@
       "intent": "feature-support-multi_skill",
       "examples": [
         {
-          "text": "do you have some reference architecture in order to orchestrar several skills in a assistant?"
-        },
-        {
-          "text": "I was wondering if we have the ability to add multiple skills to a single assistant?"
-        },
-        {
           "text": "Can more than one skill be added to Virtual Assistant?"
         },
         {
-          "text": "but i am unable to add multiple skills to a single assistant"
+          "text": "do you have some reference architecture in order to orchestrar several skills in a assistant?"
         },
         {
           "text": "can i associate more than one skill to Assistant?"
         },
         {
           "text": "Hi do we have the ability to add multiple skills to a single assistant?"
+        },
+        {
+          "text": "I was wondering if we have the ability to add multiple skills to a single assistant?"
+        },
+        {
+          "text": "but i am unable to add multiple skills to a single assistant"
         }
       ],
       "description": "User wants to know about multi skill"
@@ -452,19 +452,19 @@
       "intent": "support-open_a_case",
       "examples": [
         {
-          "text": "Can you help how do I can open a Case?"
-        },
-        {
-          "text": "can u please raise the ticket ?"
+          "text": "please give me the link to raise the ticket"
         },
         {
           "text": "how to open the case"
         },
         {
+          "text": "can u please raise the ticket ?"
+        },
+        {
           "text": "how do i open a case"
         },
         {
-          "text": "please give me the link to raise the ticket"
+          "text": "Can you help how do I can open a Case?"
         }
       ],
       "description": "User wants to open a case or learn how to open one"
@@ -473,9 +473,6 @@
       "intent": "feature-support-find_id",
       "examples": [
         {
-          "text": "What do the numbers of the node id's mean for example node_1_1491598463843': [0, 1, 0]"
-        },
-        {
           "text": "how can i find the node ID"
         },
         {
@@ -483,6 +480,9 @@
         },
         {
           "text": "how can i know the number of my node?"
+        },
+        {
+          "text": "What do the numbers of the node id's mean for example node_1_1491598463843': [0, 1, 0]"
         },
         {
           "text": "Where is the deploy button, I need to find Workspace ID."
@@ -500,9 +500,6 @@
       "intent": "feature-support-api",
       "examples": [
         {
-          "text": "Is there an api fo create versions of skills?"
-        },
-        {
           "text": "Which credential do I use when working with WordPress? Api key or username password?"
         },
         {
@@ -510,6 +507,9 @@
         },
         {
           "text": "How/where do I run an api command ?."
+        },
+        {
+          "text": "Is there an api fo create versions of skills?"
         }
       ],
       "description": "User needs help with the api"
@@ -518,7 +518,13 @@
       "intent": "feature-support-general_dialog",
       "examples": [
         {
+          "text": "I'm not able to add dialog for my Entities."
+        },
+        {
           "text": "i am trying to understand how to open child dialog nodes"
+        },
+        {
+          "text": "Dialog is not answering if anything else is above the node"
         },
         {
           "text": "conversation dialog entity literal isnt working"
@@ -537,12 +543,6 @@
         },
         {
           "text": "Server-side callout failed error when calling a Cloud Function within a dialog"
-        },
-        {
-          "text": "Dialog is not answering if anything else is above the node"
-        },
-        {
-          "text": "I'm not able to add dialog for my Entities."
         }
       ],
       "description": "user has general question about dialog"
@@ -551,10 +551,10 @@
       "intent": "chit-chat-tell_joke",
       "examples": [
         {
-          "text": "make me laugh"
+          "text": "tell me a joke"
         },
         {
-          "text": "tell me a joke"
+          "text": "make me laugh"
         }
       ],
       "description": "user wants watson to be funny like Mitch"
@@ -563,22 +563,22 @@
       "intent": "feature-support-integrations_speech",
       "examples": [
         {
+          "text": "Hello, I want to add voice to text to my bot , can yu explain how to do this/"
+        },
+        {
+          "text": "voice to text in my bot"
+        },
+        {
           "text": "I want to add voice to text to my bot"
         },
         {
           "text": "I want to use voice to text in my bot"
         },
         {
-          "text": "Hello, can you please tell me how to activate text to voice?"
-        },
-        {
           "text": "Hello. Can you tell me how to set up text to voice - vocie to text for my bot?"
         },
         {
-          "text": "Hello, I want to add voice to text to my bot , can yu explain how to do this/"
-        },
-        {
-          "text": "voice to text in my bot"
+          "text": "Hello, can you please tell me how to activate text to voice?"
         }
       ],
       "description": "user wants to add voice to their bot"
@@ -587,10 +587,16 @@
       "intent": "chit-chat-thanks",
       "examples": [
         {
-          "text": "wow, thank you!"
+          "text": "will do, thanks"
         },
         {
           "text": "Thanks so much!"
+        },
+        {
+          "text": "ok thank you very much for your quick support :)"
+        },
+        {
+          "text": "perfect thank you"
         },
         {
           "text": "Thank you guys!"
@@ -605,16 +611,10 @@
           "text": "thanks a lot"
         },
         {
-          "text": "ok thank you very much for your quick support :)"
+          "text": "Thank you so much!"
         },
         {
           "text": "Thank you sir"
-        },
-        {
-          "text": "perfect thank you"
-        },
-        {
-          "text": "Thank you so much!"
         },
         {
           "text": "Got it. Thank you!"
@@ -629,7 +629,7 @@
           "text": "And thank you!!!"
         },
         {
-          "text": "will do, thanks"
+          "text": "wow, thank you!"
         }
       ],
       "description": "User thanks bot"
@@ -638,13 +638,13 @@
       "intent": "feature-support-integrations",
       "examples": [
         {
-          "text": "I am thinking to integrate whatsapp to my chat bot"
+          "text": "i need a tutorial to integrate watson to facebook messenger"
         },
         {
           "text": "Hello, I need to help to configure watson with facebook messenger. Would you help me?"
         },
         {
-          "text": "i need a tutorial to integrate watson to facebook messenger"
+          "text": "I am thinking to integrate whatsapp to my chat bot"
         }
       ],
       "description": "user needs help with creating an integration"
@@ -656,6 +656,9 @@
           "text": "hello"
         },
         {
+          "text": "hey Watson"
+        },
+        {
           "text": "hi there"
         }
       ],
@@ -665,10 +668,10 @@
       "intent": "non-functional-cf_to_rc_migration",
       "examples": [
         {
-          "text": "I am getting this error: Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
+          "text": "Hey ! So We have 1 instance using std licence for Watson assistant and another one using the lite licence. I'm trying to upgrade my lite licence to std in order to have 2 instances and 2 std lisence. But I am getting this error : Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
         },
         {
-          "text": "Hey ! So We have 1 instance using std licence for Watson assistant and another one using the lite licence. I'm trying to upgrade my lite licence to std in order to have 2 instances and 2 std lisence. But I am getting this error : Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
+          "text": "I am getting this error: Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
         },
         {
           "text": "Service broker error: CF instance cannot be updated. First migrate the instance to RC and then update it."
@@ -680,16 +683,16 @@
       "intent": "support-already_created_ticket",
       "examples": [
         {
-          "text": "and i tried creating a ticket"
-        },
-        {
           "text": "i'm also unable to post a support ticket, also getting an error message"
         },
         {
-          "text": "I already created a ticket"
+          "text": "I opened a ticket but this is not helping. So I'll describe to you what I did maybe you can help"
         },
         {
-          "text": "I opened a ticket but this is not helping. So I'll describe to you what I did maybe you can help"
+          "text": "and i tried creating a ticket"
+        },
+        {
+          "text": "I already created a ticket"
         }
       ],
       "description": "User has already created a ticket"
@@ -698,16 +701,16 @@
       "intent": "sales-pricing_question",
       "examples": [
         {
-          "text": "pricing of Watson service"
+          "text": "hi. can you please advise on how much it would cost to upgrade from the standard to plus plan?"
         },
         {
           "text": "what is the pricing to upgrade for plus plan in watson assitant?"
         },
         {
-          "text": "hi. can you please advise on how much it would cost to upgrade from the standard to plus plan?"
+          "text": "How much is extra charge if I upgrade to plus"
         },
         {
-          "text": "How much is extra charge if I upgrade to plus"
+          "text": "pricing of Watson service"
         }
       ],
       "description": "User wants to know about the pricing of WA"
@@ -719,10 +722,10 @@
           "text": "how does wa improve"
         },
         {
-          "text": "Im interested in how the watson assistant improves when people are using the assistant on our website?"
+          "text": "how does watson learn"
         },
         {
-          "text": "how does watson learn"
+          "text": "Im interested in how the watson assistant improves when people are using the assistant on our website?"
         }
       ],
       "description": "user wants to know how watson learns on its own :o"
@@ -776,43 +779,34 @@
       "intent": "support-api_response_error",
       "examples": [
         {
-          "text": "Test failed. Error: Dialog Service Error: Processing error"
-        },
-        {
-          "text": "http response error 500"
-        },
-        {
-          "text": "Bad Gateway when using cursor by logs export API"
-        },
-        {
-          "text": "Bluemix Assets - 404 Not Found: Requested route ('watson-assistant."
-        },
-        {
-          "text": "Im getting an internal server error while launching Visual recognition service tool{\"code\":500,\"error\":\"Internal Server Error\",\"message\":\"While posting, service_key endpoint returned status code: 502\",\"reason\":\"Unknown error occurred\"}it happens always.Any help appreciated"
-        },
-        {
           "text": "Bluemix Assets - Error 500 in calls to Watson Conversation."
-        },
-        {
-          "text": "Error 500 - Internal Server Error"
-        },
-        {
-          "text": "Consistent 504 errors from the Conversation API"
-        },
-        {
-          "text": "```{ \"error\": \"invalid request\", \"code\": 400}```"
-        },
-        {
-          "text": "Bluemix Assets - Application request returns 404"
-        },
-        {
-          "text": "http Errorcode 401 not specified in swagger file"
         },
         {
           "text": "Hi,I'm getting an internal server error when using the following api:https://gateway.watsonplatform.net/conversation/api/v1/workspaces/{0}/message?version={1} (where {0} is the workspace id, and {1} is DateTime.Today).This wasn't happening roughly 1/2 weeks ago."
         },
         {
-          "text": "Bluemix Assets - ERROR Code 404 Launching Watson Conversation"
+          "text": "http Errorcode 401 not specified in swagger file"
+        },
+        {
+          "text": "Bluemix Assets - Application request returns 404"
+        },
+        {
+          "text": "```{ \"error\": \"invalid request\", \"code\": 400}```"
+        },
+        {
+          "text": "Consistent 504 errors from the Conversation API"
+        },
+        {
+          "text": "Bad Gateway when using cursor by logs export API"
+        },
+        {
+          "text": "Watson assistant is not responding"
+        },
+        {
+          "text": "<@U0GTH89H6> Its not just the tooling `error: { [Error: [object Object]] code: 500, error: 'Conversation Service returned: undefined' } `"
+        },
+        {
+          "text": "Hi guys, I'm getting the following error when using NLU analyze endpoint:``` error: \"cannot analyze: downstream issue\" code: 500```What could it be?"
         },
         {
           "text": "Manage Credentials page displays 500: Internal server error"
@@ -839,22 +833,31 @@
           "text": "\"HTTP 500 Internal Server ErrorContent-Type: application/jsonX-Error-Cause: Zuul Error: SHORTCIRCUIT\""
         },
         {
+          "text": "Now I’m getting 500's from the message endpoint with “Classification Error: Protocol error”"
+        },
+        {
           "text": "Undefined Server Error Occurred"
         },
         {
-          "text": "Now I’m getting 500's from the message endpoint with “Classification Error: Protocol error”"
+          "text": "Error 500 - Internal Server Error"
+        },
+        {
+          "text": "Test failed. Error: Dialog Service Error: Processing error"
+        },
+        {
+          "text": "http response error 500"
         },
         {
           "text": "Hello, we are having issues with watson API requests, we are using get intents endpoint (https://cloud.ibm.com/apidocs/assistant#list-intents) and I'm having the error \"Rate limit exceeded\" code:429"
         },
         {
-          "text": "Watson assistant is not responding"
+          "text": "Bluemix Assets - ERROR Code 404 Launching Watson Conversation"
         },
         {
-          "text": "<@U0GTH89H6> Its not just the tooling `error: { [Error: [object Object]] code: 500, error: 'Conversation Service returned: undefined' } `"
+          "text": "Bluemix Assets - 404 Not Found: Requested route ('watson-assistant."
         },
         {
-          "text": "Hi guys, I'm getting the following error when using NLU analyze endpoint:``` error: \"cannot analyze: downstream issue\" code: 500```What could it be?"
+          "text": "Im getting an internal server error while launching Visual recognition service tool{\"code\":500,\"error\":\"Internal Server Error\",\"message\":\"While posting, service_key endpoint returned status code: 502\",\"reason\":\"Unknown error occurred\"}it happens always.Any help appreciated"
         }
       ],
       "description": "user receives an error from calling the api"
@@ -890,34 +893,16 @@
       "intent": "feature-support-access_logs",
       "examples": [
         {
-          "text": "How can I check the data traffic with Improve at IBM Watson Assistant?"
-        },
-        {
-          "text": "I have one technical question. I am on my watson skill. I see some analytics panel of the skill conversation. Is it possible to extract it and include in my web?"
-        },
-        {
-          "text": "I want to export that usage data"
-        },
-        {
-          "text": "Is it possible to access the watson logs via Web interface, or do I have to query the logs using the logging api?"
-        },
-        {
           "text": "is it possible to access the logs of the conversation via web interface?"
         },
         {
           "text": "hi there, need to understand if there's a way to export the \"User conversation\" data from the analytics dashboard to Excel."
         },
         {
-          "text": "I have query regarding Watson Skill. I see in the skill panel there's some analytics of conversation. Can I extract this analytics from IBM ?"
+          "text": "How can I check the data traffic with Improve at IBM Watson Assistant?"
         },
         {
           "text": "Hi, I would like to know if I have the option to import the info to an excel file..."
-        },
-        {
-          "text": "I want to export a report from the IBM Watson assistant improve tab"
-        },
-        {
-          "text": "hi - id like to have a way to export the user conversations to generate reports for hte teams that make use of the chat bots. is there a way to programatically or otherwise do this?"
         },
         {
           "text": "i'm looking at the dashboard for our chatbot and i'd like to export the data represented here to excel"
@@ -926,7 +911,25 @@
           "text": "Is it possible to export the data from the Improve Section of a Watson Assistant Skill"
         },
         {
+          "text": "I want to export that usage data"
+        },
+        {
+          "text": "Is it possible to access the watson logs via Web interface, or do I have to query the logs using the logging api?"
+        },
+        {
+          "text": "I have one technical question. I am on my watson skill. I see some analytics panel of the skill conversation. Is it possible to extract it and include in my web?"
+        },
+        {
           "text": "Hi, I would like to know if it's possible to import the info from the scorecard to an excel file..."
+        },
+        {
+          "text": "I have query regarding Watson Skill. I see in the skill panel there's some analytics of conversation. Can I extract this analytics from IBM ?"
+        },
+        {
+          "text": "I want to export a report from the IBM Watson assistant improve tab"
+        },
+        {
+          "text": "hi - id like to have a way to export the user conversations to generate reports for hte teams that make use of the chat bots. is there a way to programatically or otherwise do this?"
         }
       ],
       "description": "user wants to know how to access the logs"
@@ -959,10 +962,10 @@
       "intent": "chit-chat-still_there",
       "examples": [
         {
-          "text": "Are you still here ?"
+          "text": "Are you still there?"
         },
         {
-          "text": "Are you still there?"
+          "text": "Are you still here ?"
         }
       ],
       "description": "user wants to confirm presence of the bot"
@@ -2086,5 +2089,5 @@
     "spelling_auto_correct": true
   },
   "learning_opt_out": false,
-  "status": "Available"
+  "status": "Training"
 }

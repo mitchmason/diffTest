@@ -12,6 +12,9 @@
                 },
                 {
                     "text": "hi there"
+                },
+                {
+                    "text": "howdy pardner"
                 }
             ],
             "description": "user greets the bot"
@@ -1002,6 +1005,11 @@
                 {
                     "type": "synonyms",
                     "value": "Chris",
+                    "synonyms": []
+                },
+                {
+                    "type": "synonyms",
+                    "value": "Dan",
                     "synonyms": []
                 }
             ],
@@ -2100,5 +2108,5 @@
         "spelling_auto_correct": true
     },
     "learning_opt_out": false,
-    "status": "Available"
+    "status": "Training"
 }
